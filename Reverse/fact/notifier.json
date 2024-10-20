@@ -1,0 +1,3252 @@
+curl --location --request POST 'https: //us-api.ecom-qa.samsung.com/v4/notifier/notifications/' \
+--header 'Content-Type: application/json' \
+--header 'x-ecom-app-id: ecom-orders-messaging-worker' \
+--header 'x-ecom-app-secret: ecom-ord3rs' \
+--header 'Cookie: ecom_session_id_USA=NDc3ZmI3NGYtNTVkMC00YTBjLWI3OWItZDg2ZDBmMzE5ZjU0; ecom_vi_USA=YjZjYTk2M2YtZDcyNi00Y2I2LTlmODAtMjhjYjY2NzY5ZGEz; jwt_USA=ZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpZMmhsYldGZmRtVnljMmx2YmlJNklqSXVNQ0lzSW1WNGNDSTZNVGN4TURFME9UWTJOeTQ1TURZc0ltMWhlRjlsZUhCcGNua2lPakUzTVRBeU16STBOamN1T1RBMkxDSjJaWEp6YVc5dUlqb2lNUzR3SWl3aVkybHdhR1Z5SWpvaVZUSkdjMlJIVm10WU1TOUtNVXhMYW5OTE5sZFRWWGxYYlU5VVJEaHJPVGhtTTFad2RuRndiVEJ1TUdsV1dXWlJRV0ZtTkVsRFdHOUhhbmN6UkRKVVNXSXhUMGgzYXl0YVV6aEZOREZXYjFOaE5XWndWVXhXZW5aUUswMWlRM2RpZVdsb1FtRmFjSEZLTWpWaFRVOWhWbmhhUzFGNFIySjNTa05JVjNCaVJVWlVjVGR2Vmtkd1ZFOU5kMkpYYUN0VU1EVkNLMHd4UldRdlJFNW1Na05hVUZwU1NsVTVSRGhEWnpoa2QyUm5ZUzlGU1RsdGVscGxhVWRFYTBSb1VqRTFia28yWkRaQldXVlROMjkxV0RWUFZ5OVRibEZIWTNSVmR6bHdWVVoyUVRCaFR6WjVPVVp3UkdadE5pdFdUVWRrUm1ONFRFeG5lbFUxUkRWQ01rSldTbHBaTlN0MVYzWk1ja2RKVmtGdFUxZE9TSEJyZGpkekt6ZGlhVXBoWkdObVExaERPVEYyVkZCTVRHaFRLMnh3ZDB0cVVITklSRzVKYUVaeFZuUm9VVGw0YXpGT01HSjZWRlprYVhvM1RYUkdRMVp2Tm5ZMVJHWTFWV3BpVVRremVVWTNjVFl2Y1hGS2JqbFNkamRVTTJGemIycEhhamt3UjJnck1tUmlibEkyU1VneVJHeElTM0pyTjBsdllYcDFaMDB4V1RaMGNVVlVlRzlCY0U5VVZFSkJhVXhKVkhKV09GZEROVEJoVFdvM1pGVm5hbFUzVFVoWlZFRllia2hSVFc5MVdYTTFRVXhDWjJSWmMzTnVkRTl3V0VOUVkwTkdjSEozSzNOak1sTnpiamg0TlVoVk5HNXJSVnBhTkZoTE9WaE1iazQyTTBGUlRtbzFVMkpMTWxoMlpYZzFSRk5JWTBVeVVrZHlOVEpuVEhaUlVFUjZhRGRIWlRoeWFrTTRkRGsyWTJGTVNXczViVXMzTTNKM1ZXSm1hWGt5YzJoblVrMHdiblJvZVhnd09EbG1iRFZzYjJKVGMxcElZWFpPTWxweVNGTkVOalJEVlVwb1dFWlBhVmQ0UkRWSE1XaFhiVzVZZEcxd2JWTlZkSGhOZFZKWWRFZE9aVmsxZFhCbWRuRlBWbnBtUVN0eVdFeDBSMDVMZW5nMWFsYzJSa2RuY1RCSGJWaGpkMHhFTkZkeWFsRXlkbU15VHpGVWREZzVTMGc1UXpkNWJXTk9ibmRoT1dOa2NFb3lWMDQzVFZZelVuYzVjMk50TVV4T05HRnVaRWRuUFQwaUxDSnBZWFFpT2pFM01UQXhORFl3Tmpjc0ltTnZiWEJ5WlhOemFXOXVJam9pZW14cFlpSjkuYk1vdGN0TzNQR002YVlVNFp3YmxqMkFWR0d1NVNyLTFrWnpZUHRRRi1nMUZDMEJ5bFZUNVVJdnVMLWVBZkJXVkNHcGc2Ni14UEZLanY2cS1jSjJvLUFnbGJnWmZQa1Y4SEdQU0oyeXdJU0V0dENMY1pyT0VQdFk5ZnJaN3NvbUJvaHZfSERjMk9fa2lFRkFOSkhCMVlkZDY4Z3dHX3M1ZVVVNmxOdFJBRzNN; ecom_session_id_USA=MjgzYWExMmEtYzgwZS00NGJlLWI2MmYtYThhNjEwYTk0NGMx; ecom_vi_USA=NWQ5ZGViNDctYjgwMC00Zjg4LWEyMTYtZjBkMjBmY2UyOGRh; jwt_USA=ZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpZMmhsYldGZmRtVnljMmx2YmlJNklqSXVNQ0lzSW1WNGNDSTZNVGN5TkRNek5UQXdOeTQyTVRnc0ltMWhlRjlsZUhCcGNua2lPakUzTWpRME1UYzRNRGN1TmpFNExDSjJaWEp6YVc5dUlqb2lNUzR3SWl3aVkybHdhR1Z5SWpvaVZUSkdjMlJIVm10WU1TdFRPVWg2YTNocGNVZHNkSGxxVURocVlqWnllRTlQVFVOdWQySlhSalJYVlhReFJHeHdSazR5TUU5TUwyMUZWV3RrYWl0RE5YWkNjMFpEYkhSSmFHc3ZlRGxZWTJsdmJXMXBjWGRJV25wRE1rZzNTMWRTTnpCcEt6ZElObWxoYkVKU0sxWjJOVmhxVEZSemJIWk9WM1E1YUdnelJWTTBSRGxpZFZWU2VqaE9ObGhCVEhSSlVIUldOa2RSVW5adlRHMWFXbVJUWVd0TVNqUlVlbUpZT1VJMk9WQmxNSEVyTTJ4aGRHcDVVVUkxWWtjNWVucExUVTFMTTBwVVdEWm5Ra1ZhV0dORVlucElUazVZV0dKS1Iwb3lXWGxvUXk4eE1saERkWElyYldNNE1tRnRZVE4wU2pCdmMwcFNTR0Y0TTNsbFF6VlBRVXR5WlhWdllpdHlRMlI0Um1GM1RVZEliM2MyUmpseGRtd3ljSFJqU1ZSUmIwWkNXRUZLY0RacFJHUlZVR1ZpT0ZwUmIzTkdUVTlEVTBad1JsVmFjbEJJWjJad2VuYzBRazlDUjBjNVZFSnlNMHBTUzJOa00xRm1RMnRqU0dzMGQzZ3dWWHBsWjA0dmFHY3pWazVSVG5GSU5ERlNRMVJ4V1N0VmQyaHJNR2hNYlVOU05YUjViM2MwTms0MmFuTkRNVlpFYmpoNEszSllObEpaVmpsWFNWRlJOSEpoYlRGNlpESXZVVFYyTXk5WlRESTNjVUZ5YkZOVFNVMW5TSGhoYWxSUUwwTnVkU3QyYzNkRWQyUnBOR1ZqY2xSSVFpOTBZMDR4Y205SWNWTXlaemhaT0hkTWJVMUhTbXc0TlhGdWRpOHpkRk16YjA5YVZERllNRmN6ZGpodE1rRlpkVGxqVWxCbk1rTk9WMUpHVGsweU5sVkJQVDBpTENKcFlYUWlPakUzTWpRek16RTBNRGNzSW1OdmJYQnlaWE56YVc5dUlqb2llbXhwWWlKOS5sQl9xZ0hmcjFwWTZUdFlrandORGk5YVVURDRldGxGX1FERFBBQUhCQjItTVUxUGZZWl9GZ2lsYXFyTS0yTGplM2ZJQXJRQjNxaGoyRnZ4d0tLcHpIXzFZYlUyMHppRXhxYVdnbXlieGYxR1ZrNVBJZVlTYkpScnM3bl84dnN5NExoZ2xmOVdlZ3lqMGwwcXdtU1psRjZxdkJFX1lhdVl0V1E0eUROM0JkdVE=; jwt_USA_SMB=ZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpZMmhsYldGZmRtVnljMmx2YmlJNklqSXVNQ0lzSW1WNGNDSTZNVGN4T0RjNU1UQTNNUzQxTnpVc0ltMWhlRjlsZUhCcGNua2lPakUzTVRnNE56TTROekV1TlRjMUxDSjJaWEp6YVc5dUlqb2lNUzR3SWl3aVkybHdhR1Z5SWpvaVZUSkdjMlJIVm10WU1TOVFkVmxpUW1ZdlUwVjZhWGRFUlZnclJXOUpaVGxaTnpBeWJuUmFkV01yWVRaSVEzTXhXRkZ1U1ZSMFpYcGtRWEZVTWpRemVFbEVObGQyTjNWNFowaEJNaXR6VmpVNFdteDBRMHBHVXpacE5YTlFhamRFYzJsMFMzRTJMM3BvYWxJNVVVWkRTak5DWkhKb2FYZ3llR0YwZFRkbldVTjBWMVYzT0U5RFZuaFVXV05wVEVGbmVUY3pUMUZCZUhBMWRIWjJabG80ZFZrM2FrMUZLMnBQYmxCamFDOWFiRXM0ZFdKRVJURldiV1UyVTJGeGNUSXJMMVZDT1VOM1JsZHBiRWc1TkZoSlpGQkhiemxCTjIxNU5UaENVbVozTTBsVU0xZGlTRTQ0YlRGaWJVaG9SWEZ1V2xocVJqQXZZbnBZY1ZGSU1WVktjRU5TVlM5c1oydFFUbVJPVTBSUlJDODBOV1YwWTFaTWVWRjVZelYyVEc5amJVc3ZaVVpPV2tkdVVXOHJOVXhsWTNjMFRtRkpURGd2TVdSSmEyUm9MMmxwTTFkbVExWlJkRVZ3ZWpjMU1XNXNSVFJJVjFCeVN6ZHFiMVJRYXpkTE9IWlNkSFpDTm5SS2JteGFaMHRpTUdkdlltRmhkM0Y2ZUhCU1RURkJhVmgxVEVweFNUYzRhamRQUm05SlZuQXZMMlp3WXl0VGVXODNkMFJVVVZGalJFeGlRVFpGZDJ4MFEwaFpPUzloYVhvMk4yaE1UV013UkVNM0szTjJVVWhFWVVZMFVqWlZiMkY2YWk5alZscFFaRkJ6ZVhGVFNpOUtkVkl2YTBKd2VFRlFia05TTW5KMlpVTldUM1Z6WW1wcVpHcHdiVXhvZVRkVU5sb3dZWGRNVFZoUlRUVkZObEZIU1RoNFdGbEhabnBHZERNeE1tWlVXVGhhT0M4MFVpdFlXVFZRYXpWME9XWk9UM2h4WkRORmJGSnZXbUpNUkhsV1RUbFpaVmhQTkRGek0yUk5NRU4zZVRnNFoyUjVOVlo2VjJ4a1JsaFZjbWtyTkhJMFFXcHlXbkJ3WTBoU2MybDVLMjAyV0UxQ1NtdFRTME5SUm1OUFJtVlFTbFEyTXk5bGMzTklOMmxwT0haVFNXOU9SWEZGUjJ4aFNXSmhiMWhhZVdGdE9FWkNkazl0WkU1T1UzRXJiV2xLWkRaTlRVVllVWHB0T1RBMmFWTjRValptWW1sWk1UbEpUM0ZSWW1sTk9XTnJkVFEzV0dNeVpUWkpTeXMyUVV4elRHNDFPVzFVU1VoVVNEbERhVmhWZG1KU1ZqTkZObmhvY3pjd2VEQm9WMVJIY2s5cmEzcEZZMFJCZVRoM00xRnZPV04zZG1WbGQyRXlhV0Z0YVRsSE0wY3pSRmR2VlU1T1FrUkVlbGRSZFRSblpqWXhlVTUzY2xwaEwyMTJhR05vT0RnNGFrazBkazgzTkdsTGRIWkJWa3c1Vm1ONWVWaDJZV2N5Wkdaa1dIZEJVMFp0YkU5clVXTlZTa1JJU2xCSlMybENUazl0TDBsMGRGRkRRa1UyZFdKNFNFcFpPR2xqYmxNNE1YVkpNVXBoZVVsUVVrTnRjazFrU0RGM1NHVndZbmRFVXpkUU9XWmxka1o0UWt0SmNEQkJQU0lzSW1saGRDSTZNVGN4T0RjNE56UTNNU3dpWTI5dGNISmxjM05wYjI0aU9pSjZiR2xpSW4wLmFvNHVlaDRkZV9KRUpyNnNaOU01VHEwTmxfWkJpN2daZHBESWVoZjJ6cndWYlVfQkNkTGdWOURCMXJWLXg2MXgyUjJGTnQ0MzZkeUJjdGc4YWRJc18tOVpqN0lqZm9FZGpuc3R2SnFKczgtUUZxUlYtc2dVNHJ6aGk3bVlTUmJEQUtJdndwYmNpT1I3cjdkcmkzdU5RUlY2Z185NzZPMmt5b29wczdUR01HOA==' \
+--data-raw '{
+    "context": {
+        "email": "samsung135test@gmail.com",
+        "mobile": "908 099 3497",
+        "entity_id": "d8fed054-5566-4e35-8aaa-018f46127022",
+        "entity_type": "Order",
+        "mail_content_params": {
+            "line_items": {
+                "85334e9c-b7f7-44b2-852b-9a410679a050": {
+                    "tags": [
+                        "PAYMENT_PP"
+                    ],
+                    "sku_id": "SM-R400NZAAXAR",
+                    "quantity": 1,
+                    "ui_order": 1,
+                    "attributes": {
+                        "tags": [
+                            "TEST-Bopis",
+                            "TEST-Combo",
+                            "TEST-AffirmSplitPay",
+                            "TEST-affirm",
+                            "TEST-tdbank_fin",
+                            "TEST-EIP24M",
+                            "TEST-InStock",
+                            "TEST-DTC",
+                            "TEST-BBY",
+                            "TEST-SES",
+                            "ndd",
+                            "sdd",
+                            "lineItemGroups"
+                        ],
+                        "carrier": null,
+                        "channel": [],
+                        "cis_sku": null,
+                        "options": null,
+                        "bulletin": [],
+                        "requires": [],
+                        "supports": [],
+                        "use_case": null,
+                        "ecom_flag": true,
+                        "image_url": "https://image-us.samsung.com/SamsungUS/home/my-assets/101223/Graphite.jpg?$default-400-jpg$",
+                        "is_hazmat": false,
+                        "sales_org": null,
+                        "is_grv_sku": false,
+                        "model_name": "SM-R400N",
+                        "payer_code": "2453962",
+                        "ship_alone": true,
+                        "trial_info": {
+                            "is_applicable": false
+                        },
+                        "b2bEcomFlag": true,
+                        "is_sim_card": false,
+                        "display_name": "Galaxy Buds FE, Graphite",
+                        "is_accessory": false,
+                        "product_type": "Physical",
+                        "vat_reversal": false,
+                        "thumbnail_url": "https://image-us.samsung.com/SamsungUS/home/my-assets/101223/Graphite.jpg?$default-400-jpg$",
+                        "is_cancellable": true,
+                        "is_ha_delivery": false,
+                        "primary_filter": "headphones",
+                        "product_family": "audio",
+                        "renewal_sku_id": null,
+                        "associated_skus": {},
+                        "is_customizable": false,
+                        "is_esim_enabled": false,
+                        "is_flagship_sku": false,
+                        "is_subscription": false,
+                        "plan_tier_value": 0,
+                        "ship_along_with": [],
+                        "shipping_weight": 0.10125,
+                        "b2b_ecom_enabled": false,
+                        "b2c_ecom_enabled": false,
+                        "localized_fields": [],
+                        "long_description": "Galaxy Buds FE, Graphite",
+                        "product_division": "mobile",
+                        "daas_service_skus": [],
+                        "short_description": "Galaxy Buds FE, Graphite",
+                        "delivery_indicator": null,
+                        "delivery_mode_type": null,
+                        "is_buynow_eligible": false,
+                        "allow_bundle_cancel": true,
+                        "black_listed_states": [],
+                        "is_upgrade_eligible": false,
+                        "model_division_code": "G1",
+                        "product_type_custom": null,
+                        "delivery_instruction": null,
+                        "diagonal_screen_size": null,
+                        "external_merchant_id": null,
+                        "is_insurance_product": false,
+                        "is_trade_in_eligible": false,
+                        "delivery_service_type": null,
+                        "max_purchasable_limit": 10,
+                        "partner_support_number": null,
+                        "samsung_care_product_id": null,
+                        "sim_type_for_activation": "Not Applicable",
+                        "terms_and_conditions_id": null,
+                        "carrier_delivery_mode_id": null,
+                        "delayed_shipping_message": null,
+                        "disable_bopis_for_parent": false,
+                        "is_energy_star_certified": false,
+                        "partner_admin_portal_url": null,
+                        "product_details_page_url": "/us/mobile/audio/headphones/galaxy-buds-fe-graphite-sm-r400nzaaxar",
+                        "ship_along_with_quantity": 1,
+                        "partner_attributes_config": null,
+                        "applicable_payment_options": [
+                            {
+                                "name": "affirm",
+                                "value": "affirm",
+                                "options": [
+                                    {
+                                        "name": "splitpay4",
+                                        "value": "splitpay4",
+                                        "emi_tenure": [
+                                            {
+                                                "name": "8",
+                                                "unit": "W",
+                                                "value": "8"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "tdbank_fin",
+                                "value": "tdbank_fin",
+                                "options": [
+                                    {
+                                        "name": "24_MO_EIP_0_APR",
+                                        "value": "24_MO_EIP_0_APR",
+                                        "emi_tenure": [
+                                            {
+                                                "name": "24 Months",
+                                                "unit": "M",
+                                                "value": "24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "is_buy_from_store_eligible": true,
+                        "partner_contract_margin_unit": "Percentage",
+                        "short_redemption_instruction": null,
+                        "partner_contract_margin_value": 0
+                    },
+                    "flash_sale": false,
+                    "device_info": [
+                        {
+                            "imei": "723246068112345"
+                        }
+                    ],
+                    "fulfillment": {
+                        "AtHub": 0,
+                        "Refused": 0,
+                        "Shipped": 0,
+                        "PickedUp": 0,
+                        "Preorder": 0,
+                        "shipment": {
+                            "408789310440": {
+                                "status": "Delivered",
+                                "weight": {
+                                    "unit": "lb",
+                                    "value": 0.4
+                                },
+                                "carrier": "fedex",
+                                "quantity": 1,
+                                "ship_date": "2024-08-13T17:00:00.000Z",
+                                "is_refusal": false,
+                                "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                "tracking_id": "408789310440",
+                                "tracking_url": "https://www.fedex.com/apps/fedextrack/?action=track&tracknumbers=408789310440",
+                                "ship_quantity": 0,
+                                "last_update_time": "2024-08-13T22:22:12.746901132Z",
+                                "delivered_quantity": 0,
+                                "isDeliveryException": false,
+                                "carrier_service_name": "",
+                                "fulfillment_carrier_id": "fedex",
+                                "carrier_shipment_method": "PRIORITY_OVERNIGHT",
+                                "estimated_delivery_date": "",
+                                "fulfillment_notification_time": "2024-08-13T12:17:49.172Z",
+                                "history": [
+                                    {
+                                        "timestamp": "2024-08-13T05:23:00-04:00",
+                                        "carrier_code": "AR",
+                                        "description": "At local FedEx facility",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GREENSBORO",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "DESTINATION_FEDEX_FACILITY"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-13T02:19:00-04:00",
+                                        "carrier_code": "AR",
+                                        "description": "At destination sort facility",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GREENSBORO",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "SORT_FACILITY"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-12T21:55:00-05:00",
+                                        "carrier_code": "DP",
+                                        "description": "Left FedEx origin facility",
+                                        "location": {
+                                            "street": "",
+                                            "city": "IRVING",
+                                            "state_code": "TX",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "ORIGIN_FEDEX_FACILITY"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-12T13:29:00-05:00",
+                                        "carrier_code": "PU",
+                                        "description": "Picked up",
+                                        "location": {
+                                            "street": "",
+                                            "city": "IRVING",
+                                            "state_code": "TX",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "PICKUP_LOCATION"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-12T08:07:34-05:00",
+                                        "carrier_code": "OC",
+                                        "description": "Shipment information sent to FedEx",
+                                        "location": {
+                                            "street": "",
+                                            "city": "",
+                                            "state_code": "",
+                                            "country": "",
+                                            "country_code": "",
+                                            "location_type": "CUSTOMER"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-13T08:24:00-04:00",
+                                        "carrier_code": "OD",
+                                        "description": "On FedEx vehicle for delivery",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GREENSBORO",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "VEHICLE"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-13T14:20:00-04:00",
+                                        "carrier_code": "DL",
+                                        "description": "Delivered",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GOLDSTON",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "DELIVERY_LOCATION"
+                                        }
+                                    }
+                                ],
+                                "actual_delivered_date": "2024-08-13T14:20:00-04:00"
+                            }
+                        },
+                        "DOCreated": 0,
+                        "Delivered": 1,
+                        "InTransit": 0,
+                        "Installed": 0,
+                        "SODropped": 0,
+                        "Backordered": 0,
+                        "DOCancelled": 0,
+                        "POSubmitted": 0,
+                        "SOAbandoned": 0,
+                        "SOSubmitted": 0,
+                        "sales_order": {
+                            "submitted": {
+                                "so_id": "1200918925",
+                                "event_time": "2024-08-13T09:36:11.547Z",
+                                "fulfiller_id": "gerp",
+                                "fulfillment_po_id": "SAQ10659278_01"
+                            }
+                        },
+                        "shipment_info": {
+                            "status": "Delivered",
+                            "shipment_details": {
+                                "b97f1bbf-8811-408f-be8c-d4568ed2a7aa": {
+                                    "status": "Delivered",
+                                    "tracking_ids": [
+                                        "408789310440"
+                                    ],
+                                    "shipment_quantity": 1
+                                }
+                            },
+                            "total_shipped_quantity": 1
+                        },
+                        "LabelGenerated": 0,
+                        "OutForDelivery": 0,
+                        "ReadyForPickUp": 0,
+                        "delivery_order": {
+                            "do_id": "7232460681",
+                            "event_time": "2024-08-13T12:07:26.510Z"
+                        },
+                        "RefundInitiated": 0,
+                        "ReturnInTransit": 0,
+                        "SOCallbackError": 0,
+                        "PartiallyShipped": 0,
+                        "ReplacementAtHub": 0,
+                        "ShipToBrandStore": 0,
+                        "shipment_notices": [
+                            {}
+                        ],
+                        "PartiallyPickedUp": 0,
+                        "ReminderForPickUp": 0,
+                        "PartiallyDOCreated": 0,
+                        "PartiallyDelivered": 0,
+                        "PartiallyInTransit": 0,
+                        "ReplacementRefused": 0,
+                        "ReplacementShipped": 0,
+                        "expected_ship_date": "2024-08-13T16:00:00.000Z",
+                        "PreShipResponseSent": 0,
+                        "ReplacementDOCreated": 0,
+                        "ReplacementDelivered": 0,
+                        "ReplacementInTransit": 0,
+                        "ReplacementInitiated": 0,
+                        "ReplacementInstalled": 0,
+                        "ReplacementRequested": 0,
+                        "fulfiller_attributes": {
+                            "do_id": "7232460681",
+                            "so_id": "1200918925",
+                            "sales_org": "3105",
+                            "do_line_id": "000010",
+                            "plant_code": "S341",
+                            "so_line_id": "000010",
+                            "bill_to_code": "0005949496",
+                            "ship_to_code": "0002454015",
+                            "sold_to_code": "0005949496",
+                            "fulfiller_sku": "SM-R400NZAAXAR",
+                            "model_division": "G1",
+                            "common_division": "00",
+                            "storage_location": "WC1E",
+                            "profit_center_code": "DR"
+                        },
+                        "PreShipAdviceReceived": 0,
+                        "physical_fulfiller_id": "geodis",
+                        "promise_delivery_date": {
+                            "reason": null,
+                            "update_count": 1,
+                            "last_update_time": "2024-08-13T12:15:09.768Z",
+                            "notification_count": 0,
+                            "latest_promise_date": "2024-08-16T16:00:00.000Z",
+                            "custom_stock_message": "Ships by today",
+                            "original_promise_date": "2024-08-16T16:00:00.000Z",
+                            "original_stock_status": null,
+                            "targetted_promise_date": "2024-08-16T16:00:00.000Z",
+                            "edd_custom_stock_message": "Get it Aug. 16"
+                        },
+                        "ReplacementDOCancelled": 0,
+                        "ReplacementSOSubmitted": 0,
+                        "ReadyToPickupInBrandStore": 0,
+                        "ReplacementOutForDelivery": 0,
+                        "PartiallyReplacementDOCreated": 0
+                    },
+                    "cancellation": {
+                        "Cancelled": 0,
+                        "Cancellable": 0,
+                        "CancelRejected": 0,
+                        "CancelInitiated": 0,
+                        "CancelManualOnly": 0,
+                        "allowed_cancellation_actions": [
+                            "Default",
+                            "Super"
+                        ]
+                    },
+                    "line_item_id": "85334e9c-b7f7-44b2-852b-9a410679a050",
+                    "pricing_order": 1,
+                    "line_item_cost": {
+                        "total": 127.2,
+                        "shipping": 0,
+                        "subtotal": 120,
+                        "sale_price": 120,
+                        "unit_price": 120,
+                        "display_price": 120,
+                        "regular_price": 200,
+                        "quantity_groups": [
+                            {
+                                "tax": 7.2,
+                                "discount": {
+                                    "split": [
+                                        {
+                                            "id": "IR",
+                                            "total": 80,
+                                            "value": 80,
+                                            "discount_mode": "IR",
+                                            "discount_category": "D101",
+                                            "delayed_gratification_value": 0
+                                        }
+                                    ],
+                                    "amount": 0
+                                },
+                                "shipping": 0,
+                                "subtotal": 120,
+                                "associated_quantities": []
+                            }
+                        ],
+                        "sale_price_info": {
+                            "store": {
+                                "unfinanced": 120
+                            },
+                            "public": {
+                                "unfinanced": 120
+                            }
+                        },
+                        "unit_list_price": 200,
+                        "additional_taxes": []
+                    },
+                    "returns_window": {
+                        "returns_window_start": "2024-08-13T18:20:00.000Z",
+                        "delivery_order": {
+                            "7232460681": {
+                                "returns_window_start": "2024-08-13T18:20:00.000Z",
+                                "quantity": 1
+                            }
+                        }
+                    },
+                    "skip_inventory": false,
+                    "original_sku_id": "SM-R400NZAAXAR",
+                    "inventory_status": {
+                        "status": "InStock",
+                        "order_by": "2024-08-13T12:59:59.264Z",
+                        "ship_date": "2024-08-13T18:00:00-04:00",
+                        "order_by_local": "2024-08-13T08:59:59-04:00",
+                        "delivery_options": {
+                            "DM_IM_CE_STANDARD": {
+                                "order_by": "2024-08-13T12:59:59.264Z",
+                                "order_by_local": "2024-08-13T08:59:59-04:00",
+                                "delivery_method": "DM_IM_CE_STANDARD",
+                                "expected_delivery": "2024-08-16T22:00:00.000Z",
+                                "expected_delivery_local": "2024-08-16T18:00:00-04:00",
+                                "edd_custom_stock_message": "Get it by Aug. 16"
+                            },
+                            "DM_IM_CE_EXPEDITED": {
+                                "order_by": "2024-08-13T09:59:59.276Z",
+                                "order_by_local": "2024-08-13T05:59:59-04:00",
+                                "delivery_method": "DM_IM_CE_EXPEDITED",
+                                "expected_delivery": "2024-08-15T22:00:00.000Z",
+                                "expected_delivery_local": "2024-08-15T18:00:00-04:00",
+                                "edd_custom_stock_message": "Get it by Aug. 15"
+                            }
+                        },
+                        "expected_delivery": "2024-08-16T16:00:00.000Z",
+                        "custom_stock_message": "Ships by today",
+                        "expected_delivery_local": "2024-08-16T18:00:00-04:00",
+                        "edd_custom_stock_message": "Get it Aug. 16"
+                    },
+                    "line_item_status": "Delivered",
+                    "extended_attributes": {
+                        "delivery_block_applicable": false
+                    },
+                    "delivery_order_total": 0,
+                    "payment_attributes_v2": {
+                        "auth_attributes": {
+                            "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                "amount": 127.2,
+                                "status": "Authorised",
+                                "Pending": {
+                                    "event_time": "2024-08-13T08:01:40.098Z"
+                                },
+                                "quantity": [
+                                    1
+                                ],
+                                "Authorised": {
+                                    "event_time": "2024-08-13T08:04:33.224Z"
+                                },
+                                "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db"
+                            }
+                        },
+                        "capture_attributes": {
+                            "capture_status": "Captured",
+                            "capture_requests": {
+                                "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                    "56c023a6f24326057ce280219ee0004c": {
+                                        "amount": 127.2,
+                                        "status": "Captured",
+                                        "trigger": "OrderLevel",
+                                        "Captured": {
+                                            "event_time": "2024-08-13T09:20:36.638Z"
+                                        },
+                                        "quantity": [
+                                            1
+                                        ],
+                                        "Initiated": {
+                                            "event_time": "2024-08-13T09:18:23.905Z"
+                                        },
+                                        "Processing": {
+                                            "event_time": "2024-08-13T09:18:21.484Z"
+                                        },
+                                        "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db",
+                                        "capture_request_id": "56c023a6f24326057ce280219ee0004c",
+                                        "capture_reference_id": "124b98d6-fc4c-4afe-a217-729178ad925e"
+                                    }
+                                }
+                            },
+                            "is_capture_complete": true,
+                            "capture_completion_time": "2024-08-13T09:20:36.639Z"
+                        }
+                    },
+                    "restocking_fee_window": {
+                        "start_time": "2024-08-13T18:20:00.000Z"
+                    },
+                    "replacements": {
+                        "start_time": "2024-08-13T18:20:00.000Z"
+                    }
+                },
+                "c3153b85-9631-4efc-81a5-40b453eef0c8": {
+                    "tags": [
+                        "PAYMENT_PP"
+                    ],
+                    "sku_id": "DM_IM_CE_STANDARD",
+                    "quantity": 1,
+                    "ui_order": 2,
+                    "attributes": {
+                        "tags": [
+                            "lineItemGroups"
+                        ],
+                        "carrier": null,
+                        "channel": [],
+                        "cis_sku": null,
+                        "options": null,
+                        "requires": null,
+                        "supports": null,
+                        "use_case": null,
+                        "ecom_flag": true,
+                        "image_url": null,
+                        "is_hazmat": false,
+                        "sales_org": null,
+                        "is_grv_sku": false,
+                        "model_name": "Standard",
+                        "payer_code": "2453962",
+                        "ship_alone": true,
+                        "trial_info": {
+                            "is_applicable": false
+                        },
+                        "b2bEcomFlag": false,
+                        "is_sim_card": false,
+                        "display_name": "Standard",
+                        "is_accessory": false,
+                        "product_type": "Delivery",
+                        "vat_reversal": false,
+                        "thumbnail_url": null,
+                        "is_cancellable": true,
+                        "is_ha_delivery": false,
+                        "product_family": null,
+                        "renewal_sku_id": null,
+                        "associated_skus": [],
+                        "is_customizable": false,
+                        "is_esim_enabled": false,
+                        "is_flagship_sku": false,
+                        "is_subscription": false,
+                        "plan_tier_value": 0,
+                        "ship_along_with": [],
+                        "shipping_weight": 1,
+                        "b2b_ecom_enabled": false,
+                        "b2c_ecom_enabled": false,
+                        "localized_fields": [],
+                        "long_description": null,
+                        "product_division": null,
+                        "daas_service_skus": [],
+                        "short_description": "Once shipped, arrives in 1-5 business days",
+                        "delivery_indicator": null,
+                        "delivery_mode_type": "home_delivery",
+                        "is_buynow_eligible": false,
+                        "allow_bundle_cancel": true,
+                        "black_listed_states": [],
+                        "is_upgrade_eligible": true,
+                        "model_division_code": null,
+                        "product_type_custom": null,
+                        "delivery_instruction": null,
+                        "diagonal_screen_size": 0,
+                        "external_merchant_id": null,
+                        "is_insurance_product": false,
+                        "is_trade_in_eligible": false,
+                        "delivery_service_type": null,
+                        "max_purchasable_limit": 9,
+                        "partner_support_number": null,
+                        "samsung_care_product_id": null,
+                        "sim_type_for_activation": "Not Applicable",
+                        "terms_and_conditions_id": null,
+                        "carrier_delivery_mode_id": null,
+                        "delayed_shipping_message": null,
+                        "is_energy_star_certified": false,
+                        "partner_admin_portal_url": null,
+                        "product_details_page_url": null,
+                        "ship_along_with_quantity": 1,
+                        "partner_attributes_config": null,
+                        "applicable_payment_options": [
+                            {
+                                "name": "affirm",
+                                "value": "affirm"
+                            },
+                            {
+                                "name": "adyen_cards",
+                                "value": "adyen_cards"
+                            },
+                            {
+                                "name": "Samsung Pay",
+                                "value": "spay"
+                            },
+                            {
+                                "name": "PayPal Checkout",
+                                "value": "PP"
+                            }
+                        ],
+                        "is_buy_from_store_eligible": false,
+                        "partner_contract_margin_unit": "Percentage",
+                        "short_redemption_instruction": null,
+                        "partner_contract_margin_value": 0,
+                        "shipping_method_fulfiller_code": "standard"
+                    },
+                    "flash_sale": false,
+                    "fulfillment": {
+                        "AtHub": 0,
+                        "Refused": 0,
+                        "Shipped": 0,
+                        "PickedUp": 0,
+                        "Preorder": 0,
+                        "shipment": {
+                            "9a050942-83b1-42fa-ab9d-b474cc2df6f0": {
+                                "status": "Delivered",
+                                "weight": {
+                                    "unit": "lb",
+                                    "value": 0.4
+                                },
+                                "quantity": 1,
+                                "ship_date": "2024-08-13T17:00:00.000Z",
+                                "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                "tracking_id": "9a050942-83b1-42fa-ab9d-b474cc2df6f0",
+                                "ship_quantity": 0,
+                                "last_update_time": "2024-08-13T12:15:09.768Z",
+                                "delivered_quantity": 0,
+                                "fulfillment_notification_time": "2024-08-13T12:17:49.182Z"
+                            }
+                        },
+                        "DOCreated": 0,
+                        "Delivered": 1,
+                        "InTransit": 0,
+                        "Installed": 0,
+                        "SODropped": 0,
+                        "Backordered": 0,
+                        "DOCancelled": 0,
+                        "POSubmitted": 0,
+                        "SOAbandoned": 0,
+                        "SOSubmitted": 0,
+                        "sales_order": {
+                            "submitted": {
+                                "so_id": "1200918925",
+                                "event_time": "2024-08-13T09:36:11.547Z",
+                                "fulfiller_id": "gerp",
+                                "fulfillment_po_id": "SAQ10659278_01"
+                            }
+                        },
+                        "shipment_info": {
+                            "status": "Delivered",
+                            "shipment_details": {
+                                "b97f1bbf-8811-408f-be8c-d4568ed2a7aa": {
+                                    "status": "Delivered",
+                                    "tracking_ids": [
+                                        "9a050942-83b1-42fa-ab9d-b474cc2df6f0"
+                                    ],
+                                    "shipment_quantity": 1
+                                }
+                            },
+                            "total_shipped_quantity": 1
+                        },
+                        "LabelGenerated": 0,
+                        "OutForDelivery": 0,
+                        "ReadyForPickUp": 0,
+                        "delivery_order": {
+                            "do_id": "7232460681",
+                            "event_time": "2024-08-13T12:07:26.510Z"
+                        },
+                        "RefundInitiated": 0,
+                        "ReturnInTransit": 0,
+                        "SOCallbackError": 0,
+                        "PartiallyShipped": 0,
+                        "ReplacementAtHub": 0,
+                        "ShipToBrandStore": 0,
+                        "PartiallyPickedUp": 0,
+                        "ReminderForPickUp": 0,
+                        "PartiallyDOCreated": 0,
+                        "PartiallyDelivered": 0,
+                        "PartiallyInTransit": 0,
+                        "ReplacementRefused": 0,
+                        "ReplacementShipped": 0,
+                        "PreShipResponseSent": 0,
+                        "ReplacementDOCreated": 0,
+                        "ReplacementDelivered": 0,
+                        "ReplacementInTransit": 0,
+                        "ReplacementInitiated": 0,
+                        "ReplacementInstalled": 0,
+                        "ReplacementRequested": 0,
+                        "fulfiller_attributes": {
+                            "plant_code": "S341",
+                            "model_division": "G1",
+                            "common_division": "00",
+                            "storage_location": "WC1E",
+                            "profit_center_code": "DR"
+                        },
+                        "PreShipAdviceReceived": 0,
+                        "physical_fulfiller_id": "geodis",
+                        "promise_delivery_date": {
+                            "update_count": 0,
+                            "last_update_time": "2024-08-13T08:01:35.869Z",
+                            "notification_count": 0,
+                            "latest_promise_date": null,
+                            "original_promise_date": null,
+                            "targetted_promise_date": null,
+                            "edd_custom_stock_message": null
+                        },
+                        "ReplacementDOCancelled": 0,
+                        "ReplacementSOSubmitted": 0,
+                        "ReadyToPickupInBrandStore": 0,
+                        "ReplacementOutForDelivery": 0,
+                        "PartiallyReplacementDOCreated": 0
+                    },
+                    "cancellation": {
+                        "Cancelled": 0,
+                        "Cancellable": 0,
+                        "CancelRejected": 0,
+                        "CancelInitiated": 0,
+                        "CancelManualOnly": 0,
+                        "allowed_cancellation_actions": [
+                            "Default",
+                            "Super"
+                        ]
+                    },
+                    "line_item_id": "c3153b85-9631-4efc-81a5-40b453eef0c8",
+                    "pricing_order": 2,
+                    "line_item_cost": {
+                        "total": 0,
+                        "shipping": 0,
+                        "subtotal": 0,
+                        "sale_price": 0,
+                        "unit_price": 0,
+                        "display_price": 0,
+                        "regular_price": 0,
+                        "quantity_groups": [
+                            {
+                                "tax": 0,
+                                "discount": {
+                                    "split": [],
+                                    "amount": 0
+                                },
+                                "shipping": 0,
+                                "subtotal": 0,
+                                "associated_quantities": []
+                            }
+                        ],
+                        "sale_price_info": {
+                            "store": {
+                                "unfinanced": 0
+                            },
+                            "public": {
+                                "unfinanced": 0
+                            }
+                        },
+                        "unit_list_price": 0,
+                        "additional_taxes": []
+                    },
+                    "returns_window": {
+                        "returns_window_start": "2024-08-13T17:02:00.000Z"
+                    },
+                    "skip_inventory": false,
+                    "original_sku_id": "DM_IM_CE_STANDARD",
+                    "inventory_status": {
+                        "status": "InStock"
+                    },
+                    "line_item_status": "Delivered",
+                    "extended_attributes": {
+                        "delivery_block_applicable": false
+                    },
+                    "delivery_order_total": 0,
+                    "payment_attributes_v2": {
+                        "auth_attributes": {
+                            "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                "amount": 0,
+                                "status": "Authorised",
+                                "Pending": {
+                                    "event_time": "2024-08-13T08:01:40.098Z"
+                                },
+                                "quantity": [
+                                    1
+                                ],
+                                "Authorised": {
+                                    "event_time": "2024-08-13T08:04:33.224Z"
+                                },
+                                "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db"
+                            }
+                        }
+                    },
+                    "restocking_fee_window": {
+                        "start_time": "2024-08-13T17:00:00.000Z"
+                    }
+                }
+            },
+            "delivered_date": "2024-08-13T14:20:00-04:00",
+            "delivered_tracking_id": "408789310440",
+            "line_item_ids": [
+                "85334e9c-b7f7-44b2-852b-9a410679a050",
+                "c3153b85-9631-4efc-81a5-40b453eef0c8"
+            ],
+            "request_id": "d8fed054-5566-4e35-8aaa-018f46127022",
+            "order": {
+                "id": "d8fed054-5566-4e35-8aaa-018f46127022",
+                "cost": {
+                    "tax": 7.2,
+                    "total": 127.2,
+                    "discount": {
+                        "split": [],
+                        "amount": 0
+                    },
+                    "shipping": 0,
+                    "subtotal": 120,
+                    "display_tax": 7.2,
+                    "additional_taxes": [],
+                    "remaining_due_amount": 0,
+                    "tax_bloat_percentage": 0
+                },
+                "tags": [
+                    "B2C",
+                    "GUEST_ORDER",
+                    "PAYMENT_PP"
+                ],
+                "type": "B2C",
+                "po_id": "SAQ10659278",
+                "locale": "en-US",
+                "status": "Delivered",
+                "cart_id": "d8fed054-5566-4e35-8aaa-018f46127022",
+                "options": {
+                    "line_items": {
+                        "85334e9c-b7f7-44b2-852b-9a410679a050": {
+                            "is_schedulable": false,
+                            "is_complex_installation": false
+                        },
+                        "c3153b85-9631-4efc-81a5-40b453eef0c8": {
+                            "is_complex_installation": false
+                        }
+                    }
+                },
+                "payment": [
+                    {
+                        "cost_split": {
+                            "total": 127.2,
+                            "line_items": {
+                                "85334e9c-b7f7-44b2-852b-9a410679a050": {
+                                    "tax": 7.2,
+                                    "cost": 127.2,
+                                    "quantity": [
+                                        1
+                                    ],
+                                    "subtotal": 120,
+                                    "additional_taxes": []
+                                },
+                                "c3153b85-9631-4efc-81a5-40b453eef0c8": {
+                                    "tax": 0,
+                                    "cost": 0,
+                                    "quantity": [
+                                        1
+                                    ],
+                                    "subtotal": 0,
+                                    "additional_taxes": []
+                                }
+                            }
+                        },
+                        "payment_info": {
+                            "option": "Paypal Checkout",
+                            "failure_url": "https://us.ecom-qa.samsung.com/us/web/express/checkout?paypal=cancelled",
+                            "success_url": "https://us.ecom-qa.samsung.com/us/web/express/checkout?paypal=success",
+                            "payment_method": "PP",
+                            "payment_gateway": "paypal",
+                            "credit_card_details": {}
+                        },
+                        "transaction_info": {
+                            "id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db",
+                            "status": "Authorised",
+                            "message": "Payment has been authorized",
+                            "external_ref_id": "O-2AR190129L483700G",
+                            "internal_status": "Authorised",
+                            "payment_context": {
+                                "step": "one-step-transaction",
+                                "auth_amount": 120,
+                                "redirect_url": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-5WD22763M3615483N",
+                                "transaction_type": "Primary",
+                                "payment_attributes": {
+                                    "billing_info": {
+                                        "city": "Fort Wainwright",
+                                        "email": "testmm1@gmail.com",
+                                        "phone": "18012345678",
+                                        "state": "AK",
+                                        "line_1": "3448 Ile De France St #242",
+                                        "line_2": "",
+                                        "country": "US",
+                                        "last_name": "Test",
+                                        "first_name": "APPROVEDTWENTY",
+                                        "postal_code": "99703",
+                                        "address_save": false,
+                                        "is_primary_address": false
+                                    },
+                                    "card_details": {},
+                                    "shipping_info": {
+                                        "city": "Dallas",
+                                        "email": "testmm1@gmail.com",
+                                        "phone": "18012345678",
+                                        "state": "TX",
+                                        "line_1": "23 FARMERS BRANCH TX",
+                                        "country": "US",
+                                        "last_name": "Three",
+                                        "first_name": "Rick",
+                                        "postal_code": "75234",
+                                        "address_save": false,
+                                        "is_primary_address": false
+                                    },
+                                    "external_order_id": "O-2AR190129L483700G",
+                                    "payment_reference": "9G497650WD645992H",
+                                    "payment_display_details": {
+                                        "instrument": "PP",
+                                        "display_name": "PayPal Checkout"
+                                    },
+                                    "is_partially_cancellable": true
+                                },
+                                "is_saved_for_future_payments": false
+                            },
+                            "is_payment_failure": false,
+                            "is_payment_verified": true
+                        }
+                    }
+                ],
+                "currency": "USD",
+                "user_info": {
+                    "locale": "USA",
+                    "user_id": null,
+                    "store_type": "B2C",
+                    "visitor_id": "cf04fb19-605f-47de-a5b8-4ced121fc9f0",
+                    "identity_id": null,
+                    "device_attributes": {
+                        "os": "OS X",
+                        "port": 22817,
+                        "browser": "Chrome",
+                        "platform": "Apple Mac",
+                        "ip_address": "103.81.106.251",
+                        "client_type": "Web",
+                        "device_type": "Desktop"
+                    },
+                    "vat_reversal_threshold_amount": 0
+                },
+                "line_items": [
+                    {
+                        "tags": [
+                            "PAYMENT_PP"
+                        ],
+                        "sku_id": "SM-R400NZAAXAR",
+                        "quantity": 1,
+                        "ui_order": 1,
+                        "attributes": {
+                            "tags": [
+                                "TEST-Bopis",
+                                "TEST-Combo",
+                                "TEST-AffirmSplitPay",
+                                "TEST-affirm",
+                                "TEST-tdbank_fin",
+                                "TEST-EIP24M",
+                                "TEST-InStock",
+                                "TEST-DTC",
+                                "TEST-BBY",
+                                "TEST-SES",
+                                "ndd",
+                                "sdd",
+                                "lineItemGroups"
+                            ],
+                            "carrier": null,
+                            "channel": [],
+                            "cis_sku": null,
+                            "options": null,
+                            "bulletin": [],
+                            "requires": [],
+                            "supports": [],
+                            "use_case": null,
+                            "ecom_flag": true,
+                            "image_url": "https://image-us.samsung.com/SamsungUS/home/my-assets/101223/Graphite.jpg?$default-400-jpg$",
+                            "is_hazmat": false,
+                            "sales_org": null,
+                            "is_grv_sku": false,
+                            "model_name": "SM-R400N",
+                            "payer_code": "2453962",
+                            "ship_alone": true,
+                            "trial_info": {
+                                "is_applicable": false
+                            },
+                            "b2bEcomFlag": true,
+                            "is_sim_card": false,
+                            "display_name": "Galaxy Buds FE, Graphite",
+                            "is_accessory": false,
+                            "product_type": "Physical",
+                            "vat_reversal": false,
+                            "thumbnail_url": "https://image-us.samsung.com/SamsungUS/home/my-assets/101223/Graphite.jpg?$default-400-jpg$",
+                            "is_cancellable": true,
+                            "is_ha_delivery": false,
+                            "primary_filter": "headphones",
+                            "product_family": "audio",
+                            "renewal_sku_id": null,
+                            "associated_skus": {},
+                            "is_customizable": false,
+                            "is_esim_enabled": false,
+                            "is_flagship_sku": false,
+                            "is_subscription": false,
+                            "plan_tier_value": 0,
+                            "ship_along_with": [],
+                            "shipping_weight": 0.10125,
+                            "b2b_ecom_enabled": false,
+                            "b2c_ecom_enabled": false,
+                            "localized_fields": [],
+                            "long_description": "Galaxy Buds FE, Graphite",
+                            "product_division": "mobile",
+                            "daas_service_skus": [],
+                            "short_description": "Galaxy Buds FE, Graphite",
+                            "delivery_indicator": null,
+                            "delivery_mode_type": null,
+                            "is_buynow_eligible": false,
+                            "allow_bundle_cancel": true,
+                            "black_listed_states": [],
+                            "is_upgrade_eligible": false,
+                            "model_division_code": "G1",
+                            "product_type_custom": null,
+                            "delivery_instruction": null,
+                            "diagonal_screen_size": null,
+                            "external_merchant_id": null,
+                            "is_insurance_product": false,
+                            "is_trade_in_eligible": false,
+                            "delivery_service_type": null,
+                            "max_purchasable_limit": 10,
+                            "partner_support_number": null,
+                            "samsung_care_product_id": null,
+                            "sim_type_for_activation": "Not Applicable",
+                            "terms_and_conditions_id": null,
+                            "carrier_delivery_mode_id": null,
+                            "delayed_shipping_message": null,
+                            "disable_bopis_for_parent": false,
+                            "is_energy_star_certified": false,
+                            "partner_admin_portal_url": null,
+                            "product_details_page_url": "https://www.qashop.samsung.com/us/mobile/audio/headphones/galaxy-buds-fe-graphite-sm-r400nzaaxar",
+                            "ship_along_with_quantity": 1,
+                            "partner_attributes_config": null,
+                            "applicable_payment_options": [
+                                {
+                                    "name": "affirm",
+                                    "value": "affirm",
+                                    "options": [
+                                        {
+                                            "name": "splitpay4",
+                                            "value": "splitpay4",
+                                            "emi_tenure": [
+                                                {
+                                                    "name": "8",
+                                                    "unit": "W",
+                                                    "value": "8"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "tdbank_fin",
+                                    "value": "tdbank_fin",
+                                    "options": [
+                                        {
+                                            "name": "24_MO_EIP_0_APR",
+                                            "value": "24_MO_EIP_0_APR",
+                                            "emi_tenure": [
+                                                {
+                                                    "name": "24 Months",
+                                                    "unit": "M",
+                                                    "value": "24"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "is_buy_from_store_eligible": true,
+                            "partner_contract_margin_unit": "Percentage",
+                            "short_redemption_instruction": null,
+                            "partner_contract_margin_value": 0
+                        },
+                        "flash_sale": false,
+                        "device_info": [
+                            {
+                                "imei": "723246068112345"
+                            }
+                        ],
+                        "fulfillment": {
+                            "AtHub": 0,
+                            "Refused": 0,
+                            "Shipped": 0,
+                            "PickedUp": 0,
+                            "Preorder": 0,
+                            "shipment": {
+                                "408789310440": {
+                                    "status": "Delivered",
+                                    "weight": {
+                                        "unit": "lb",
+                                        "value": 0.4
+                                    },
+                                    "carrier": "fedex",
+                                    "quantity": 1,
+                                    "ship_date": "2024-08-13T17:00:00.000Z",
+                                    "is_refusal": false,
+                                    "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                    "tracking_id": "408789310440",
+                                    "tracking_url": "https://www.fedex.com/apps/fedextrack/?action=track&tracknumbers=408789310440",
+                                    "ship_quantity": 0,
+                                    "last_update_time": "2024-08-13T22:22:12.746901132Z",
+                                    "delivered_quantity": 0,
+                                    "isDeliveryException": false,
+                                    "carrier_service_name": "",
+                                    "fulfillment_carrier_id": "fedex",
+                                    "carrier_shipment_method": "PRIORITY_OVERNIGHT",
+                                    "estimated_delivery_date": "",
+                                    "fulfillment_notification_time": "2024-08-13T12:17:49.172Z",
+                                    "history": [
+                                        {
+                                            "timestamp": "2024-08-13T05:23:00-04:00",
+                                            "carrier_code": "AR",
+                                            "description": "At local FedEx facility",
+                                            "location": {
+                                                "street": "",
+                                                "city": "GREENSBORO",
+                                                "state_code": "NC",
+                                                "country": "United States",
+                                                "country_code": "US",
+                                                "location_type": "DESTINATION_FEDEX_FACILITY"
+                                            }
+                                        },
+                                        {
+                                            "timestamp": "2024-08-13T02:19:00-04:00",
+                                            "carrier_code": "AR",
+                                            "description": "At destination sort facility",
+                                            "location": {
+                                                "street": "",
+                                                "city": "GREENSBORO",
+                                                "state_code": "NC",
+                                                "country": "United States",
+                                                "country_code": "US",
+                                                "location_type": "SORT_FACILITY"
+                                            }
+                                        },
+                                        {
+                                            "timestamp": "2024-08-12T21:55:00-05:00",
+                                            "carrier_code": "DP",
+                                            "description": "Left FedEx origin facility",
+                                            "location": {
+                                                "street": "",
+                                                "city": "IRVING",
+                                                "state_code": "TX",
+                                                "country": "United States",
+                                                "country_code": "US",
+                                                "location_type": "ORIGIN_FEDEX_FACILITY"
+                                            }
+                                        },
+                                        {
+                                            "timestamp": "2024-08-12T13:29:00-05:00",
+                                            "carrier_code": "PU",
+                                            "description": "Picked up",
+                                            "location": {
+                                                "street": "",
+                                                "city": "IRVING",
+                                                "state_code": "TX",
+                                                "country": "United States",
+                                                "country_code": "US",
+                                                "location_type": "PICKUP_LOCATION"
+                                            }
+                                        },
+                                        {
+                                            "timestamp": "2024-08-12T08:07:34-05:00",
+                                            "carrier_code": "OC",
+                                            "description": "Shipment information sent to FedEx",
+                                            "location": {
+                                                "street": "",
+                                                "city": "",
+                                                "state_code": "",
+                                                "country": "",
+                                                "country_code": "",
+                                                "location_type": "CUSTOMER"
+                                            }
+                                        },
+                                        {
+                                            "timestamp": "2024-08-13T08:24:00-04:00",
+                                            "carrier_code": "OD",
+                                            "description": "On FedEx vehicle for delivery",
+                                            "location": {
+                                                "street": "",
+                                                "city": "GREENSBORO",
+                                                "state_code": "NC",
+                                                "country": "United States",
+                                                "country_code": "US",
+                                                "location_type": "VEHICLE"
+                                            }
+                                        },
+                                        {
+                                            "timestamp": "2024-08-13T14:20:00-04:00",
+                                            "carrier_code": "DL",
+                                            "description": "Delivered",
+                                            "location": {
+                                                "street": "",
+                                                "city": "GOLDSTON",
+                                                "state_code": "NC",
+                                                "country": "United States",
+                                                "country_code": "US",
+                                                "location_type": "DELIVERY_LOCATION"
+                                            }
+                                        }
+                                    ],
+                                    "actual_delivered_date": "2024-08-13T14:20:00-04:00"
+                                }
+                            },
+                            "DOCreated": 0,
+                            "Delivered": 1,
+                            "InTransit": 0,
+                            "Installed": 0,
+                            "SODropped": 0,
+                            "Backordered": 0,
+                            "DOCancelled": 0,
+                            "POSubmitted": 0,
+                            "SOAbandoned": 0,
+                            "SOSubmitted": 0,
+                            "sales_order": {
+                                "submitted": {
+                                    "so_id": "1200918925",
+                                    "event_time": "2024-08-13T09:36:11.547Z",
+                                    "fulfiller_id": "gerp",
+                                    "fulfillment_po_id": "SAQ10659278_01"
+                                }
+                            },
+                            "shipment_info": {
+                                "status": "Delivered",
+                                "shipment_details": {
+                                    "b97f1bbf-8811-408f-be8c-d4568ed2a7aa": {
+                                        "status": "Delivered",
+                                        "tracking_ids": [
+                                            "408789310440"
+                                        ],
+                                        "shipment_quantity": 1
+                                    }
+                                },
+                                "total_shipped_quantity": 1
+                            },
+                            "LabelGenerated": 0,
+                            "OutForDelivery": 0,
+                            "ReadyForPickUp": 0,
+                            "delivery_order": {
+                                "do_id": "7232460681",
+                                "event_time": "2024-08-13T12:07:26.510Z"
+                            },
+                            "RefundInitiated": 0,
+                            "ReturnInTransit": 0,
+                            "SOCallbackError": 0,
+                            "PartiallyShipped": 0,
+                            "ReplacementAtHub": 0,
+                            "ShipToBrandStore": 0,
+                            "shipment_notices": [
+                                {}
+                            ],
+                            "PartiallyPickedUp": 0,
+                            "ReminderForPickUp": 0,
+                            "PartiallyDOCreated": 0,
+                            "PartiallyDelivered": 0,
+                            "PartiallyInTransit": 0,
+                            "ReplacementRefused": 0,
+                            "ReplacementShipped": 0,
+                            "expected_ship_date": "2024-08-13T16:00:00.000Z",
+                            "PreShipResponseSent": 0,
+                            "ReplacementDOCreated": 0,
+                            "ReplacementDelivered": 0,
+                            "ReplacementInTransit": 0,
+                            "ReplacementInitiated": 0,
+                            "ReplacementInstalled": 0,
+                            "ReplacementRequested": 0,
+                            "fulfiller_attributes": {
+                                "do_id": "7232460681",
+                                "so_id": "1200918925",
+                                "sales_org": "3105",
+                                "do_line_id": "000010",
+                                "plant_code": "S341",
+                                "so_line_id": "000010",
+                                "bill_to_code": "0005949496",
+                                "ship_to_code": "0002454015",
+                                "sold_to_code": "0005949496",
+                                "fulfiller_sku": "SM-R400NZAAXAR",
+                                "model_division": "G1",
+                                "common_division": "00",
+                                "storage_location": "WC1E",
+                                "profit_center_code": "DR"
+                            },
+                            "PreShipAdviceReceived": 0,
+                            "physical_fulfiller_id": "geodis",
+                            "promise_delivery_date": {
+                                "reason": null,
+                                "update_count": 1,
+                                "last_update_time": "2024-08-13T12:15:09.768Z",
+                                "notification_count": 0,
+                                "latest_promise_date": "2024-08-16T16:00:00.000Z",
+                                "custom_stock_message": "Ships by today",
+                                "original_promise_date": "2024-08-16T16:00:00.000Z",
+                                "original_stock_status": null,
+                                "targetted_promise_date": "2024-08-16T16:00:00.000Z",
+                                "edd_custom_stock_message": "Get it Aug. 16"
+                            },
+                            "ReplacementDOCancelled": 0,
+                            "ReplacementSOSubmitted": 0,
+                            "ReadyToPickupInBrandStore": 0,
+                            "ReplacementOutForDelivery": 0,
+                            "PartiallyReplacementDOCreated": 0
+                        },
+                        "cancellation": {
+                            "Cancelled": 0,
+                            "Cancellable": 0,
+                            "CancelRejected": 0,
+                            "CancelInitiated": 0,
+                            "CancelManualOnly": 0,
+                            "allowed_cancellation_actions": [
+                                "Default",
+                                "Super"
+                            ]
+                        },
+                        "line_item_id": "85334e9c-b7f7-44b2-852b-9a410679a050",
+                        "pricing_order": 1,
+                        "line_item_cost": {
+                            "total": 127.2,
+                            "shipping": 0,
+                            "subtotal": 120,
+                            "sale_price": 120,
+                            "unit_price": 120,
+                            "display_price": 120,
+                            "regular_price": 200,
+                            "quantity_groups": [
+                                {
+                                    "tax": 7.2,
+                                    "discount": {
+                                        "split": [
+                                            {
+                                                "id": "IR",
+                                                "total": 80,
+                                                "value": 80,
+                                                "discount_mode": "IR",
+                                                "discount_category": "D101",
+                                                "delayed_gratification_value": 0
+                                            }
+                                        ],
+                                        "amount": 0
+                                    },
+                                    "shipping": 0,
+                                    "subtotal": 120,
+                                    "associated_quantities": []
+                                }
+                            ],
+                            "sale_price_info": {
+                                "store": {
+                                    "unfinanced": 120
+                                },
+                                "public": {
+                                    "unfinanced": 120
+                                }
+                            },
+                            "unit_list_price": 200,
+                            "additional_taxes": []
+                        },
+                        "returns_window": {
+                            "returns_window_start": "2024-08-13T18:20:00.000Z",
+                            "delivery_order": {
+                                "7232460681": {
+                                    "returns_window_start": "2024-08-13T18:20:00.000Z",
+                                    "quantity": 1
+                                }
+                            }
+                        },
+                        "skip_inventory": false,
+                        "original_sku_id": "SM-R400NZAAXAR",
+                        "inventory_status": {
+                            "status": "InStock",
+                            "order_by": "2024-08-13T12:59:59.264Z",
+                            "ship_date": "2024-08-13T18:00:00-04:00",
+                            "order_by_local": "2024-08-13T08:59:59-04:00",
+                            "delivery_options": {
+                                "DM_IM_CE_STANDARD": {
+                                    "order_by": "2024-08-13T12:59:59.264Z",
+                                    "order_by_local": "2024-08-13T08:59:59-04:00",
+                                    "delivery_method": "DM_IM_CE_STANDARD",
+                                    "expected_delivery": "2024-08-16T22:00:00.000Z",
+                                    "expected_delivery_local": "2024-08-16T18:00:00-04:00",
+                                    "edd_custom_stock_message": "Get it by Aug. 16"
+                                },
+                                "DM_IM_CE_EXPEDITED": {
+                                    "order_by": "2024-08-13T09:59:59.276Z",
+                                    "order_by_local": "2024-08-13T05:59:59-04:00",
+                                    "delivery_method": "DM_IM_CE_EXPEDITED",
+                                    "expected_delivery": "2024-08-15T22:00:00.000Z",
+                                    "expected_delivery_local": "2024-08-15T18:00:00-04:00",
+                                    "edd_custom_stock_message": "Get it by Aug. 15"
+                                }
+                            },
+                            "expected_delivery": "2024-08-16T12:00:00-04:00",
+                            "custom_stock_message": "Ships by today",
+                            "expected_delivery_local": "2024-08-16T18:00:00-04:00",
+                            "edd_custom_stock_message": "Get it Aug. 16"
+                        },
+                        "line_item_status": "Delivered",
+                        "extended_attributes": {
+                            "delivery_block_applicable": false
+                        },
+                        "delivery_order_total": 0,
+                        "payment_attributes_v2": {
+                            "auth_attributes": {
+                                "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                    "amount": 127.2,
+                                    "status": "Authorised",
+                                    "Pending": {
+                                        "event_time": "2024-08-13T08:01:40.098Z"
+                                    },
+                                    "quantity": [
+                                        1
+                                    ],
+                                    "Authorised": {
+                                        "event_time": "2024-08-13T08:04:33.224Z"
+                                    },
+                                    "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db"
+                                }
+                            },
+                            "capture_attributes": {
+                                "capture_status": "Captured",
+                                "capture_requests": {
+                                    "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                        "56c023a6f24326057ce280219ee0004c": {
+                                            "amount": 127.2,
+                                            "status": "Captured",
+                                            "trigger": "OrderLevel",
+                                            "Captured": {
+                                                "event_time": "2024-08-13T09:20:36.638Z"
+                                            },
+                                            "quantity": [
+                                                1
+                                            ],
+                                            "Initiated": {
+                                                "event_time": "2024-08-13T09:18:23.905Z"
+                                            },
+                                            "Processing": {
+                                                "event_time": "2024-08-13T09:18:21.484Z"
+                                            },
+                                            "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db",
+                                            "capture_request_id": "56c023a6f24326057ce280219ee0004c",
+                                            "capture_reference_id": "124b98d6-fc4c-4afe-a217-729178ad925e"
+                                        }
+                                    }
+                                },
+                                "is_capture_complete": true,
+                                "capture_completion_time": "2024-08-13T09:20:36.639Z"
+                            }
+                        },
+                        "restocking_fee_window": {
+                            "start_time": "2024-08-13T18:20:00.000Z"
+                        },
+                        "replacements": {
+                            "start_time": "2024-08-13T18:20:00.000Z"
+                        },
+                        "is_sdd_line_item": false,
+                        "is_ndd_line_item": false,
+                        "promise_delivery_date": {
+                            "reason": null,
+                            "update_count": 1,
+                            "last_update_time": "2024-08-13T12:15:09.768Z",
+                            "notification_count": 0,
+                            "latest_promise_date": "2024-08-16T16:00:00.000Z",
+                            "custom_stock_message": "Ships by today",
+                            "original_promise_date": "2024-08-16T16:00:00.000Z",
+                            "original_stock_status": null,
+                            "targetted_promise_date": "2024-08-16T16:00:00.000Z",
+                            "edd_custom_stock_message": "Get it Aug. 16"
+                        },
+                        "shipping_method_name": "Standard",
+                        "activation_url": "https://www.qashop.samsung.com\n            /us/checkout/carrier/#/activate/d8fed054-5566-4e35-8aaa-018f46127022?item=85334e9c-b7f7-44b2-852b-9a410679a050",
+                        "tracking_info": [
+                            {
+                                "status": "Delivered",
+                                "weight": {
+                                    "unit": "lb",
+                                    "value": 0.4
+                                },
+                                "carrier": "fedex",
+                                "quantity": 1,
+                                "ship_date": "2024-08-13T17:00:00.000Z",
+                                "is_refusal": false,
+                                "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                "tracking_id": "408789310440",
+                                "tracking_url": "https://www.fedex.com/apps/fedextrack/?action=track&tracknumbers=408789310440",
+                                "ship_quantity": 0,
+                                "last_update_time": "2024-08-13T22:22:12.746901132Z",
+                                "delivered_quantity": 0,
+                                "isDeliveryException": false,
+                                "carrier_service_name": "",
+                                "fulfillment_carrier_id": "fedex",
+                                "carrier_shipment_method": "PRIORITY_OVERNIGHT",
+                                "estimated_delivery_date": "",
+                                "fulfillment_notification_time": "2024-08-13T12:17:49.172Z",
+                                "history": [
+                                    {
+                                        "timestamp": "2024-08-13T05:23:00-04:00",
+                                        "carrier_code": "AR",
+                                        "description": "At local FedEx facility",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GREENSBORO",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "DESTINATION_FEDEX_FACILITY"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-13T02:19:00-04:00",
+                                        "carrier_code": "AR",
+                                        "description": "At destination sort facility",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GREENSBORO",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "SORT_FACILITY"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-12T21:55:00-05:00",
+                                        "carrier_code": "DP",
+                                        "description": "Left FedEx origin facility",
+                                        "location": {
+                                            "street": "",
+                                            "city": "IRVING",
+                                            "state_code": "TX",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "ORIGIN_FEDEX_FACILITY"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-12T13:29:00-05:00",
+                                        "carrier_code": "PU",
+                                        "description": "Picked up",
+                                        "location": {
+                                            "street": "",
+                                            "city": "IRVING",
+                                            "state_code": "TX",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "PICKUP_LOCATION"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-12T08:07:34-05:00",
+                                        "carrier_code": "OC",
+                                        "description": "Shipment information sent to FedEx",
+                                        "location": {
+                                            "street": "",
+                                            "city": "",
+                                            "state_code": "",
+                                            "country": "",
+                                            "country_code": "",
+                                            "location_type": "CUSTOMER"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-13T08:24:00-04:00",
+                                        "carrier_code": "OD",
+                                        "description": "On FedEx vehicle for delivery",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GREENSBORO",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "VEHICLE"
+                                        }
+                                    },
+                                    {
+                                        "timestamp": "2024-08-13T14:20:00-04:00",
+                                        "carrier_code": "DL",
+                                        "description": "Delivered",
+                                        "location": {
+                                            "street": "",
+                                            "city": "GOLDSTON",
+                                            "state_code": "NC",
+                                            "country": "United States",
+                                            "country_code": "US",
+                                            "location_type": "DELIVERY_LOCATION"
+                                        }
+                                    }
+                                ],
+                                "actual_delivered_date": "2024-08-13T14:20:00-04:00"
+                            }
+                        ],
+                        "is_sms_opt_in_eligible": false
+                    },
+                    {
+                        "tags": [
+                            "PAYMENT_PP"
+                        ],
+                        "sku_id": "DM_IM_CE_STANDARD",
+                        "quantity": 1,
+                        "ui_order": 2,
+                        "attributes": {
+                            "tags": [
+                                "lineItemGroups"
+                            ],
+                            "carrier": null,
+                            "channel": [],
+                            "cis_sku": null,
+                            "options": null,
+                            "requires": null,
+                            "supports": null,
+                            "use_case": null,
+                            "ecom_flag": true,
+                            "image_url": null,
+                            "is_hazmat": false,
+                            "sales_org": null,
+                            "is_grv_sku": false,
+                            "model_name": "Standard",
+                            "payer_code": "2453962",
+                            "ship_alone": true,
+                            "trial_info": {
+                                "is_applicable": false
+                            },
+                            "b2bEcomFlag": false,
+                            "is_sim_card": false,
+                            "display_name": "Standard",
+                            "is_accessory": false,
+                            "product_type": "Delivery",
+                            "vat_reversal": false,
+                            "thumbnail_url": null,
+                            "is_cancellable": true,
+                            "is_ha_delivery": false,
+                            "product_family": null,
+                            "renewal_sku_id": null,
+                            "associated_skus": [],
+                            "is_customizable": false,
+                            "is_esim_enabled": false,
+                            "is_flagship_sku": false,
+                            "is_subscription": false,
+                            "plan_tier_value": 0,
+                            "ship_along_with": [],
+                            "shipping_weight": 1,
+                            "b2b_ecom_enabled": false,
+                            "b2c_ecom_enabled": false,
+                            "localized_fields": [],
+                            "long_description": null,
+                            "product_division": null,
+                            "daas_service_skus": [],
+                            "short_description": "Once shipped, arrives in 1-5 business days",
+                            "delivery_indicator": null,
+                            "delivery_mode_type": "home_delivery",
+                            "is_buynow_eligible": false,
+                            "allow_bundle_cancel": true,
+                            "black_listed_states": [],
+                            "is_upgrade_eligible": true,
+                            "model_division_code": null,
+                            "product_type_custom": null,
+                            "delivery_instruction": null,
+                            "diagonal_screen_size": 0,
+                            "external_merchant_id": null,
+                            "is_insurance_product": false,
+                            "is_trade_in_eligible": false,
+                            "delivery_service_type": null,
+                            "max_purchasable_limit": 9,
+                            "partner_support_number": null,
+                            "samsung_care_product_id": null,
+                            "sim_type_for_activation": "Not Applicable",
+                            "terms_and_conditions_id": null,
+                            "carrier_delivery_mode_id": null,
+                            "delayed_shipping_message": null,
+                            "is_energy_star_certified": false,
+                            "partner_admin_portal_url": null,
+                            "product_details_page_url": null,
+                            "ship_along_with_quantity": 1,
+                            "partner_attributes_config": null,
+                            "applicable_payment_options": [
+                                {
+                                    "name": "affirm",
+                                    "value": "affirm"
+                                },
+                                {
+                                    "name": "adyen_cards",
+                                    "value": "adyen_cards"
+                                },
+                                {
+                                    "name": "Samsung Pay",
+                                    "value": "spay"
+                                },
+                                {
+                                    "name": "PayPal Checkout",
+                                    "value": "PP"
+                                }
+                            ],
+                            "is_buy_from_store_eligible": false,
+                            "partner_contract_margin_unit": "Percentage",
+                            "short_redemption_instruction": null,
+                            "partner_contract_margin_value": 0,
+                            "shipping_method_fulfiller_code": "standard"
+                        },
+                        "flash_sale": false,
+                        "fulfillment": {
+                            "AtHub": 0,
+                            "Refused": 0,
+                            "Shipped": 0,
+                            "PickedUp": 0,
+                            "Preorder": 0,
+                            "shipment": {
+                                "9a050942-83b1-42fa-ab9d-b474cc2df6f0": {
+                                    "status": "Delivered",
+                                    "weight": {
+                                        "unit": "lb",
+                                        "value": 0.4
+                                    },
+                                    "quantity": 1,
+                                    "ship_date": "2024-08-13T17:00:00.000Z",
+                                    "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                    "tracking_id": "9a050942-83b1-42fa-ab9d-b474cc2df6f0",
+                                    "ship_quantity": 0,
+                                    "last_update_time": "2024-08-13T12:15:09.768Z",
+                                    "delivered_quantity": 0,
+                                    "fulfillment_notification_time": "2024-08-13T12:17:49.182Z"
+                                }
+                            },
+                            "DOCreated": 0,
+                            "Delivered": 1,
+                            "InTransit": 0,
+                            "Installed": 0,
+                            "SODropped": 0,
+                            "Backordered": 0,
+                            "DOCancelled": 0,
+                            "POSubmitted": 0,
+                            "SOAbandoned": 0,
+                            "SOSubmitted": 0,
+                            "sales_order": {
+                                "submitted": {
+                                    "so_id": "1200918925",
+                                    "event_time": "2024-08-13T09:36:11.547Z",
+                                    "fulfiller_id": "gerp",
+                                    "fulfillment_po_id": "SAQ10659278_01"
+                                }
+                            },
+                            "shipment_info": {
+                                "status": "Delivered",
+                                "shipment_details": {
+                                    "b97f1bbf-8811-408f-be8c-d4568ed2a7aa": {
+                                        "status": "Delivered",
+                                        "tracking_ids": [
+                                            "9a050942-83b1-42fa-ab9d-b474cc2df6f0"
+                                        ],
+                                        "shipment_quantity": 1
+                                    }
+                                },
+                                "total_shipped_quantity": 1
+                            },
+                            "LabelGenerated": 0,
+                            "OutForDelivery": 0,
+                            "ReadyForPickUp": 0,
+                            "delivery_order": {
+                                "do_id": "7232460681",
+                                "event_time": "2024-08-13T12:07:26.510Z"
+                            },
+                            "RefundInitiated": 0,
+                            "ReturnInTransit": 0,
+                            "SOCallbackError": 0,
+                            "PartiallyShipped": 0,
+                            "ReplacementAtHub": 0,
+                            "ShipToBrandStore": 0,
+                            "PartiallyPickedUp": 0,
+                            "ReminderForPickUp": 0,
+                            "PartiallyDOCreated": 0,
+                            "PartiallyDelivered": 0,
+                            "PartiallyInTransit": 0,
+                            "ReplacementRefused": 0,
+                            "ReplacementShipped": 0,
+                            "PreShipResponseSent": 0,
+                            "ReplacementDOCreated": 0,
+                            "ReplacementDelivered": 0,
+                            "ReplacementInTransit": 0,
+                            "ReplacementInitiated": 0,
+                            "ReplacementInstalled": 0,
+                            "ReplacementRequested": 0,
+                            "fulfiller_attributes": {
+                                "plant_code": "S341",
+                                "model_division": "G1",
+                                "common_division": "00",
+                                "storage_location": "WC1E",
+                                "profit_center_code": "DR"
+                            },
+                            "PreShipAdviceReceived": 0,
+                            "physical_fulfiller_id": "geodis",
+                            "promise_delivery_date": {
+                                "update_count": 0,
+                                "last_update_time": "2024-08-13T08:01:35.869Z",
+                                "notification_count": 0,
+                                "latest_promise_date": null,
+                                "original_promise_date": null,
+                                "targetted_promise_date": null,
+                                "edd_custom_stock_message": null
+                            },
+                            "ReplacementDOCancelled": 0,
+                            "ReplacementSOSubmitted": 0,
+                            "ReadyToPickupInBrandStore": 0,
+                            "ReplacementOutForDelivery": 0,
+                            "PartiallyReplacementDOCreated": 0
+                        },
+                        "cancellation": {
+                            "Cancelled": 0,
+                            "Cancellable": 0,
+                            "CancelRejected": 0,
+                            "CancelInitiated": 0,
+                            "CancelManualOnly": 0,
+                            "allowed_cancellation_actions": [
+                                "Default",
+                                "Super"
+                            ]
+                        },
+                        "line_item_id": "c3153b85-9631-4efc-81a5-40b453eef0c8",
+                        "pricing_order": 2,
+                        "line_item_cost": {
+                            "total": 0,
+                            "shipping": 0,
+                            "subtotal": 0,
+                            "sale_price": 0,
+                            "unit_price": 0,
+                            "display_price": 0,
+                            "regular_price": 0,
+                            "quantity_groups": [
+                                {
+                                    "tax": 0,
+                                    "discount": {
+                                        "split": [],
+                                        "amount": 0
+                                    },
+                                    "shipping": 0,
+                                    "subtotal": 0,
+                                    "associated_quantities": []
+                                }
+                            ],
+                            "sale_price_info": {
+                                "store": {
+                                    "unfinanced": 0
+                                },
+                                "public": {
+                                    "unfinanced": 0
+                                }
+                            },
+                            "unit_list_price": 0,
+                            "additional_taxes": []
+                        },
+                        "returns_window": {
+                            "returns_window_start": "2024-08-13T17:02:00.000Z"
+                        },
+                        "skip_inventory": false,
+                        "original_sku_id": "DM_IM_CE_STANDARD",
+                        "inventory_status": {
+                            "status": "InStock"
+                        },
+                        "line_item_status": "Delivered",
+                        "extended_attributes": {
+                            "delivery_block_applicable": false
+                        },
+                        "delivery_order_total": 0,
+                        "payment_attributes_v2": {
+                            "auth_attributes": {
+                                "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                    "amount": 0,
+                                    "status": "Authorised",
+                                    "Pending": {
+                                        "event_time": "2024-08-13T08:01:40.098Z"
+                                    },
+                                    "quantity": [
+                                        1
+                                    ],
+                                    "Authorised": {
+                                        "event_time": "2024-08-13T08:04:33.224Z"
+                                    },
+                                    "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db"
+                                }
+                            }
+                        },
+                        "restocking_fee_window": {
+                            "start_time": "2024-08-13T17:00:00.000Z"
+                        },
+                        "is_sdd_line_item": false,
+                        "is_ndd_line_item": false,
+                        "promise_delivery_date": {
+                            "update_count": 0,
+                            "last_update_time": "2024-08-13T08:01:35.869Z",
+                            "notification_count": 0,
+                            "latest_promise_date": null,
+                            "original_promise_date": null,
+                            "targetted_promise_date": null,
+                            "edd_custom_stock_message": null
+                        },
+                        "activation_url": "https://www.qashop.samsung.com\n            /us/checkout/carrier/#/activate/d8fed054-5566-4e35-8aaa-018f46127022?item=c3153b85-9631-4efc-81a5-40b453eef0c8",
+                        "tracking_info": [
+                            {
+                                "status": "Delivered",
+                                "weight": {
+                                    "unit": "lb",
+                                    "value": 0.4
+                                },
+                                "quantity": 1,
+                                "ship_date": "2024-08-13T17:00:00.000Z",
+                                "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                "tracking_id": "9a050942-83b1-42fa-ab9d-b474cc2df6f0",
+                                "ship_quantity": 0,
+                                "last_update_time": "2024-08-13T12:15:09.768Z",
+                                "delivered_quantity": 0,
+                                "fulfillment_notification_time": "2024-08-13T12:17:49.182Z"
+                            }
+                        ]
+                    }
+                ],
+                "expiry_date": "2081-08-27T15:59:27.430Z",
+                "is_sup_cart": false,
+                "retry_flags": {
+                    "delivery_modes": false,
+                    "payment_options": false
+                },
+                "billing_info": {
+                    "city": "Fort Wainwright",
+                    "email": "testmm1@gmail.com",
+                    "phone": "18012345678",
+                    "state": "AK",
+                    "line_1": "3448 Ile De France St #242",
+                    "country": "US",
+                    "last_name": "Test",
+                    "first_name": "APPROVEDTWENTY",
+                    "postal_code": "99703",
+                    "address_save": false,
+                    "is_primary_address": false,
+                    "normalized_address": {
+                        "city": "Fort Wainwright",
+                        "zip4": "8114",
+                        "state": "AK",
+                        "line_1": "3448 Ile De France St",
+                        "line_2": null,
+                        "country": "US",
+                        "is_valid": true,
+                        "lat_long": {
+                            "accuracy": "RoofTop",
+                            "latitude": 64.8315,
+                            "longitude": -147.67444
+                        },
+                        "velocity": 450,
+                        "warnings": [],
+                        "address_id": "LOCATION_34F1498D_9907_42B8_8C25_11B6F40E8A2D",
+                        "popularity": 15,
+                        "volatility": 13,
+                        "postal_code": "99703",
+                        "address_type": "Single unit",
+                        "completeness": "Complete",
+                        "is_forwarder": false,
+                        "is_commercial": false,
+                        "last_seen_days": 5,
+                        "validity_level": "valid_to_house_number",
+                        "first_seen_days": 1050,
+                        "address_risk_score": 0.288
+                    }
+                },
+                "channel_info": {
+                    "channel_code": "ESTORE"
+                },
+                "coupon_codes": [],
+                "shipping_info": {
+                    "city": "Livonia",
+                    "email": "test@mail.com",
+                    "phone": "418 723 4829",
+                    "state": "MI",
+                    "line_1": "1375 lick ave",
+                    "country": "US",
+                    "last_name": "Ragu",
+                    "first_name": "Karthick",
+                    "postal_code": "48152",
+                    "address_save": false,
+                    "is_primary_address": false,
+                    "normalized_address": {
+                        "city": "Livonia",
+                        "zip4": null,
+                        "state": "MI",
+                        "line_1": null,
+                        "line_2": null,
+                        "country": "US",
+                        "is_valid": false,
+                        "lat_long": {
+                            "accuracy": "PostalCode",
+                            "latitude": 42.4262,
+                            "longitude": -83.3741
+                        },
+                        "velocity": null,
+                        "warnings": [],
+                        "address_id": null,
+                        "popularity": null,
+                        "volatility": null,
+                        "postal_code": "48152",
+                        "address_type": null,
+                        "completeness": "Complete",
+                        "is_forwarder": null,
+                        "is_commercial": null,
+                        "last_seen_days": null,
+                        "validity_level": "valid_to_city",
+                        "first_seen_days": null,
+                        "address_risk_score": null
+                    }
+                },
+                "home_appliance": {
+                    "details": {
+                        "SM-R400NZAAXAR": {
+                            "is_HA_sku": false
+                        },
+                        "DM_IM_CE_STANDARD": {
+                            "is_HA_sku": false
+                        }
+                    },
+                    "last_update_time": "2024-08-13T08:01:35.864Z",
+                    "is_home_appliance_delivery_order": false
+                },
+                "is_cancellable": false,
+                "multi_quantity": false,
+                "offers_applied": {},
+                "referral_codes": [],
+                "schema_version": "5.0.0",
+                "chosen_payments": [
+                    {
+                        "payment_method": "PP",
+                        "payment_option": "Paypal Checkout"
+                    }
+                ],
+                "delivery_groups": {
+                    "37cf468c-57aa-4305-99ea-b1cf5b096678": {
+                        "line_items": [
+                            {
+                                "quantity": 1,
+                                "line_item_id": "85334e9c-b7f7-44b2-852b-9a410679a050"
+                            }
+                        ],
+                        "delivery_group_id": "37cf468c-57aa-4305-99ea-b1cf5b096678",
+                        "delivery_line_item_id": "c3153b85-9631-4efc-81a5-40b453eef0c8"
+                    }
+                },
+                "detailed_status": {
+                    "fraud": {
+                        "status": "Pass"
+                    }
+                },
+                "submission_date": "August 13, 2024",
+                "fraud_attributes": {
+                    "step": "CreateCheckout",
+                    "count": 1,
+                    "decision": "ACCEPT",
+                    "pre_auth": "BurnIn",
+                    "checkout_id": "7218345d-9c4a-41be-b523-1d5d30c250ca",
+                    "create_checkout_status": "success",
+                    "partner_investigation_id": 5169968766
+                },
+                "line_item_groups": {
+                    "85334e9c-b7f7-44b2-852b-9a410679a050": [
+                        "85334e9c-b7f7-44b2-852b-9a410679a050"
+                    ],
+                    "c3153b85-9631-4efc-81a5-40b453eef0c8": [
+                        "c3153b85-9631-4efc-81a5-40b453eef0c8"
+                    ]
+                },
+                "meta_information": {
+                    "tags": [
+                        "CART_CREATED"
+                    ],
+                    "experiments": [
+                        {
+                            "remove_tax_bloat": true
+                        }
+                    ]
+                },
+                "workflow_version": "v2.0.0",
+                "block_saved_cards": false,
+                "customer_timezone": "America/Detroit",
+                "is_allow_sku_swap": false,
+                "is_login_required": false,
+                "payment_attributes": {
+                    "cost_split_type": "WeightedCostSplit",
+                    "cost_split_version": "2.0",
+                    "bloat_tax_percentage": 0
+                },
+                "is_epp_auth_required": false,
+                "rejected_coupon_codes": [],
+                "normalized_address_ids": [
+                    "LOCATION_34F1498D_9907_42B8_8C25_11B6F40E8A2D"
+                ],
+                "affiliate_tracking_info": {
+                    "adobe_visitor_id": "MCMID|78280778130551123934316614997919171202"
+                },
+                "is_allow_address_update": false,
+                "is_exchange_transformed": true,
+                "is_strict_zero_discount": false,
+                "line_item_finance_plans": [
+                    {
+                        "sku_id": "SM-R400NZAAXAR",
+                        "finance_info": {
+                            "financePlans": [
+                                {
+                                    "tenure": {
+                                        "unit": "M",
+                                        "value": "24"
+                                    },
+                                    "plan_id": "24_MO_EIP_0_APR",
+                                    "plan_name": "24_MO_EIP_0_APR",
+                                    "plan_type": "EIP",
+                                    "down_payment": "",
+                                    "total_amount": "0.00",
+                                    "interest_rate": "0",
+                                    "minimum_amount": 50,
+                                    "monthly_payment": 5.31,
+                                    "upgrade_plan_id": 27405,
+                                    "external_plan_id": 27400,
+                                    "installment_amount": "0",
+                                    "financing_attributes": {
+                                        "is_upgrade_eligible": true
+                                    },
+                                    "finance_provider_type": "TDBank",
+                                    "first_monthly_payment": 5.31,
+                                    "monthly_rate_coefficient": 0.04167
+                                }
+                            ],
+                            "financingOptions": [
+                                {
+                                    "sku_id": "SM-R400NZAAXAR",
+                                    "plan_id": "24_MO_EIP_0_APR",
+                                    "financing_eligible_skus": [],
+                                    "related_product_families": []
+                                }
+                            ]
+                        },
+                        "line_item_id": "85334e9c-b7f7-44b2-852b-9a410679a050"
+                    },
+                    {
+                        "sku_id": "DM_IM_CE_STANDARD",
+                        "finance_info": {
+                            "financePlans": [
+                                {
+                                    "tenure": {
+                                        "unit": "M",
+                                        "value": "24"
+                                    },
+                                    "plan_id": "24_MO_EIP_0_APR",
+                                    "plan_name": "24_MO_EIP_0_APR",
+                                    "plan_type": "EIP",
+                                    "down_payment": "",
+                                    "total_amount": "0.00",
+                                    "interest_rate": "0",
+                                    "minimum_amount": 50,
+                                    "monthly_payment": 0,
+                                    "upgrade_plan_id": 27405,
+                                    "external_plan_id": 27400,
+                                    "installment_amount": "0",
+                                    "financing_attributes": {
+                                        "is_upgrade_eligible": true
+                                    },
+                                    "finance_provider_type": "TDBank",
+                                    "first_monthly_payment": 0,
+                                    "monthly_rate_coefficient": 0.04167
+                                }
+                            ],
+                            "financingOptions": [
+                                {
+                                    "sku_id": "DM_IM_CE_STANDARD",
+                                    "plan_id": "24_MO_EIP_0_APR",
+                                    "financing_eligible_skus": [],
+                                    "related_product_families": []
+                                }
+                            ]
+                        },
+                        "line_item_id": "c3153b85-9631-4efc-81a5-40b453eef0c8"
+                    }
+                ],
+                "remorse_period_end_date": "2024-08-13T12:01:35.553Z",
+                "applicable_finance_plans": [
+                    {
+                        "tenure": {
+                            "unit": "M",
+                            "value": "24"
+                        },
+                        "plan_id": "24_MO_EIP_0_APR",
+                        "plan_name": "24_MO_EIP_0_APR",
+                        "plan_type": "EIP",
+                        "down_payment": "",
+                        "total_amount": "0.00",
+                        "interest_rate": "0",
+                        "minimum_amount": 50,
+                        "monthly_payment": 5.31,
+                        "upgrade_plan_id": 27405,
+                        "external_plan_id": 27400,
+                        "installment_amount": "0",
+                        "financing_attributes": {
+                            "is_upgrade_eligible": true
+                        },
+                        "finance_provider_type": "TDBank",
+                        "first_monthly_payment": 5.31,
+                        "monthly_rate_coefficient": 0.04167
+                    }
+                ],
+                "is_store_pickup_eligible": true,
+                "coupon_codes_failure_count": 0,
+                "rewards_redemption_eligible": false,
+                "is_delivery_method_available": false,
+                "_shorten_payment_link": "https://www.qashop.samsung.com/us/web/search-orders?orderId=SAQ10659278&encryptedEmailId=4zPl%2BwtuD1a6BAnunHcjFMI9cfiWHlJvA20B5L6jGIw%3D&encryptedPassword=TmdhzIyYUGVuriIW0RKZVrniRe7XM30gN0PoaOoVhw9d%2BvH0CYL1xP%2BobInNhapTNQ6rP2beGGHTCyfy5k62wxQqEUYShejgI1Ale2%2B9rge4kl4OuvAOcHs2iTKInS%2F9xp3ygHG8MkzLq01GWPnknEkiKmo6Lvo12Csvkee4Tb6L0GJdjxOFba4UY0tsse0UUFpGZZ%2B5QfsApm9kfnbs4j4YNvJ8GLQXaQQxQ1%2B%2FSDim8Zp%2B6JjVWZ3WOijZDAMVNlLFRORYeTe7xJcjxq49%2FvqQXTw8NXHdGPi4jMEcLvXj0NEXlOitGv8Y5sCjnnNPnGq9N17NkC2n4Liu8HTFaQ%3D%3D&zipCodeShipping=48152",
+                "update_payment_url": "https://www.qashop.samsung.com/us/web/search-orders?orderId=SAQ10659278&encryptedEmailId=CyL3AwJUwBHj%2FpnAmiUMAdHNI9rF77NEY3i2x2SY6cI%3D&encryptedPassword=lw8pGbNg51GQi9xZplV3puOQY8DC6dMzsCQtxXtgnydmc723RQCNmaw%2BXmm3oKPiEjFBR%2FsWtg%2FrjMy5GUpeJTRFOuXQRHCOtQdw1luXkWq%2BYds60aPrqZGua1DUMBYDW9bf091%2BmXiLstgxlUVK1kTFq0DGTnmhtR5Tpf9oId%2B%2FczgMcK17oIylTWum1ZZeUKaCQSR2af0cPOqPeEpBIeBL0RZwq5ocP4Dvon7eApoIafMrqCaK6b2cLpge%2B%2F0zF8ROUXM9y%2BcYpq%2F%2FzKpF1g4dxYXWkFsXmq6LlcLClrh5nf56FxQ%2FGu5j2iyLLUvFevITainkBVbouc%2Bh4buZDA%3D%3D&zipCodeShipping=48152",
+                "is_sdd_order": false,
+                "is_ndd_order": false,
+                "is_try_before_you_buy_order": false,
+                "submission_date_iso": "2024-08-13T08:01:35.898Z",
+                "order_landing_url": "https://www.qashop.samsung.com/us/web/search-orders?orderId=SAQ10659278&encryptedEmailId=zkcuaCWxShDfL3CaZsUWy0Hf8aGsAJEuLFKVi8ZOtXM%3D&encryptedPassword=iXWHZlE%2F%2Fz3TsHdBrcbwY8kC5BdO8D3zws%2BZwIQ9g%2BaUaad2BOcwihK2TTgbgt6hd1qzGWfid9X8SokrVLBs1cV6q%2BtEaceBpmnE7HvzAz7Q4JqcWBzsF8ItOSgcH%2BXVpWOX0dEceLdA9ardDE903PTpPiNOnnz4bMhJ8AxcoPYhYNi1niFuVf8YWAqHl8CxRUFI5R2b5epACzkqH0QCbRUPQNT%2BkVoTyAM5S7hj5AsCOv23YD8CsybkOD8NrfV6qTWhDMpgiEZMbJLPlXwpiGBdUngKl3FDuagMTd1QtF9aO7Q3sw8xUEydK4fEh2vC7XAW1569j%2B7JLc4Um4fw5Q%3D%3D&zipCodeShipping=48152",
+                "enable_my_orders_page_url": true,
+                "delivery_line_items": [
+                    {
+                        "line_items": [
+                            {
+                                "tags": [
+                                    "PAYMENT_PP"
+                                ],
+                                "sku_id": "SM-R400NZAAXAR",
+                                "quantity": 1,
+                                "ui_order": 1,
+                                "attributes": {
+                                    "tags": [
+                                        "TEST-Bopis",
+                                        "TEST-Combo",
+                                        "TEST-AffirmSplitPay",
+                                        "TEST-affirm",
+                                        "TEST-tdbank_fin",
+                                        "TEST-EIP24M",
+                                        "TEST-InStock",
+                                        "TEST-DTC",
+                                        "TEST-BBY",
+                                        "TEST-SES",
+                                        "ndd",
+                                        "sdd",
+                                        "lineItemGroups"
+                                    ],
+                                    "carrier": null,
+                                    "channel": [],
+                                    "cis_sku": null,
+                                    "options": null,
+                                    "bulletin": [],
+                                    "requires": [],
+                                    "supports": [],
+                                    "use_case": null,
+                                    "ecom_flag": true,
+                                    "image_url": "https://image-us.samsung.com/SamsungUS/home/my-assets/101223/Graphite.jpg?$default-400-jpg$",
+                                    "is_hazmat": false,
+                                    "sales_org": null,
+                                    "is_grv_sku": false,
+                                    "model_name": "SM-R400N",
+                                    "payer_code": "2453962",
+                                    "ship_alone": true,
+                                    "trial_info": {
+                                        "is_applicable": false
+                                    },
+                                    "b2bEcomFlag": true,
+                                    "is_sim_card": false,
+                                    "display_name": "Galaxy Buds FE, Graphite",
+                                    "is_accessory": false,
+                                    "product_type": "Physical",
+                                    "vat_reversal": false,
+                                    "thumbnail_url": "https://image-us.samsung.com/SamsungUS/home/my-assets/101223/Graphite.jpg?$default-400-jpg$",
+                                    "is_cancellable": true,
+                                    "is_ha_delivery": false,
+                                    "primary_filter": "headphones",
+                                    "product_family": "audio",
+                                    "renewal_sku_id": null,
+                                    "associated_skus": {},
+                                    "is_customizable": false,
+                                    "is_esim_enabled": false,
+                                    "is_flagship_sku": false,
+                                    "is_subscription": false,
+                                    "plan_tier_value": 0,
+                                    "ship_along_with": [],
+                                    "shipping_weight": 0.10125,
+                                    "b2b_ecom_enabled": false,
+                                    "b2c_ecom_enabled": false,
+                                    "localized_fields": [],
+                                    "long_description": "Galaxy Buds FE, Graphite",
+                                    "product_division": "mobile",
+                                    "daas_service_skus": [],
+                                    "short_description": "Galaxy Buds FE, Graphite",
+                                    "delivery_indicator": null,
+                                    "delivery_mode_type": null,
+                                    "is_buynow_eligible": false,
+                                    "allow_bundle_cancel": true,
+                                    "black_listed_states": [],
+                                    "is_upgrade_eligible": false,
+                                    "model_division_code": "G1",
+                                    "product_type_custom": null,
+                                    "delivery_instruction": null,
+                                    "diagonal_screen_size": null,
+                                    "external_merchant_id": null,
+                                    "is_insurance_product": false,
+                                    "is_trade_in_eligible": false,
+                                    "delivery_service_type": null,
+                                    "max_purchasable_limit": 10,
+                                    "partner_support_number": null,
+                                    "samsung_care_product_id": null,
+                                    "sim_type_for_activation": "Not Applicable",
+                                    "terms_and_conditions_id": null,
+                                    "carrier_delivery_mode_id": null,
+                                    "delayed_shipping_message": null,
+                                    "disable_bopis_for_parent": false,
+                                    "is_energy_star_certified": false,
+                                    "partner_admin_portal_url": null,
+                                    "product_details_page_url": "https://www.qashop.samsung.com/us/mobile/audio/headphones/galaxy-buds-fe-graphite-sm-r400nzaaxar",
+                                    "ship_along_with_quantity": 1,
+                                    "partner_attributes_config": null,
+                                    "applicable_payment_options": [
+                                        {
+                                            "name": "affirm",
+                                            "value": "affirm",
+                                            "options": [
+                                                {
+                                                    "name": "splitpay4",
+                                                    "value": "splitpay4",
+                                                    "emi_tenure": [
+                                                        {
+                                                            "name": "8",
+                                                            "unit": "W",
+                                                            "value": "8"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "tdbank_fin",
+                                            "value": "tdbank_fin",
+                                            "options": [
+                                                {
+                                                    "name": "24_MO_EIP_0_APR",
+                                                    "value": "24_MO_EIP_0_APR",
+                                                    "emi_tenure": [
+                                                        {
+                                                            "name": "24 Months",
+                                                            "unit": "M",
+                                                            "value": "24"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "is_buy_from_store_eligible": true,
+                                    "partner_contract_margin_unit": "Percentage",
+                                    "short_redemption_instruction": null,
+                                    "partner_contract_margin_value": 0
+                                },
+                                "flash_sale": false,
+                                "device_info": [
+                                    {
+                                        "imei": "723246068112345"
+                                    }
+                                ],
+                                "fulfillment": {
+                                    "AtHub": 0,
+                                    "Refused": 0,
+                                    "Shipped": 0,
+                                    "PickedUp": 0,
+                                    "Preorder": 0,
+                                    "shipment": {
+                                        "408789310440": {
+                                            "status": "Delivered",
+                                            "weight": {
+                                                "unit": "lb",
+                                                "value": 0.4
+                                            },
+                                            "carrier": "fedex",
+                                            "quantity": 1,
+                                            "ship_date": "2024-08-13T17:00:00.000Z",
+                                            "is_refusal": false,
+                                            "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                            "tracking_id": "408789310440",
+                                            "tracking_url": "https://www.fedex.com/apps/fedextrack/?action=track&tracknumbers=408789310440",
+                                            "ship_quantity": 0,
+                                            "last_update_time": "2024-08-13T22:22:12.746901132Z",
+                                            "delivered_quantity": 0,
+                                            "isDeliveryException": false,
+                                            "carrier_service_name": "",
+                                            "fulfillment_carrier_id": "fedex",
+                                            "carrier_shipment_method": "PRIORITY_OVERNIGHT",
+                                            "estimated_delivery_date": "",
+                                            "fulfillment_notification_time": "2024-08-13T12:17:49.172Z",
+                                            "history": [
+                                                {
+                                                    "timestamp": "2024-08-13T05:23:00-04:00",
+                                                    "carrier_code": "AR",
+                                                    "description": "At local FedEx facility",
+                                                    "location": {
+                                                        "street": "",
+                                                        "city": "GREENSBORO",
+                                                        "state_code": "NC",
+                                                        "country": "United States",
+                                                        "country_code": "US",
+                                                        "location_type": "DESTINATION_FEDEX_FACILITY"
+                                                    }
+                                                },
+                                                {
+                                                    "timestamp": "2024-08-13T02:19:00-04:00",
+                                                    "carrier_code": "AR",
+                                                    "description": "At destination sort facility",
+                                                    "location": {
+                                                        "street": "",
+                                                        "city": "GREENSBORO",
+                                                        "state_code": "NC",
+                                                        "country": "United States",
+                                                        "country_code": "US",
+                                                        "location_type": "SORT_FACILITY"
+                                                    }
+                                                },
+                                                {
+                                                    "timestamp": "2024-08-12T21:55:00-05:00",
+                                                    "carrier_code": "DP",
+                                                    "description": "Left FedEx origin facility",
+                                                    "location": {
+                                                        "street": "",
+                                                        "city": "IRVING",
+                                                        "state_code": "TX",
+                                                        "country": "United States",
+                                                        "country_code": "US",
+                                                        "location_type": "ORIGIN_FEDEX_FACILITY"
+                                                    }
+                                                },
+                                                {
+                                                    "timestamp": "2024-08-12T13:29:00-05:00",
+                                                    "carrier_code": "PU",
+                                                    "description": "Picked up",
+                                                    "location": {
+                                                        "street": "",
+                                                        "city": "IRVING",
+                                                        "state_code": "TX",
+                                                        "country": "United States",
+                                                        "country_code": "US",
+                                                        "location_type": "PICKUP_LOCATION"
+                                                    }
+                                                },
+                                                {
+                                                    "timestamp": "2024-08-12T08:07:34-05:00",
+                                                    "carrier_code": "OC",
+                                                    "description": "Shipment information sent to FedEx",
+                                                    "location": {
+                                                        "street": "",
+                                                        "city": "",
+                                                        "state_code": "",
+                                                        "country": "",
+                                                        "country_code": "",
+                                                        "location_type": "CUSTOMER"
+                                                    }
+                                                },
+                                                {
+                                                    "timestamp": "2024-08-13T08:24:00-04:00",
+                                                    "carrier_code": "OD",
+                                                    "description": "On FedEx vehicle for delivery",
+                                                    "location": {
+                                                        "street": "",
+                                                        "city": "GREENSBORO",
+                                                        "state_code": "NC",
+                                                        "country": "United States",
+                                                        "country_code": "US",
+                                                        "location_type": "VEHICLE"
+                                                    }
+                                                },
+                                                {
+                                                    "timestamp": "2024-08-13T14:20:00-04:00",
+                                                    "carrier_code": "DL",
+                                                    "description": "Delivered",
+                                                    "location": {
+                                                        "street": "",
+                                                        "city": "GOLDSTON",
+                                                        "state_code": "NC",
+                                                        "country": "United States",
+                                                        "country_code": "US",
+                                                        "location_type": "DELIVERY_LOCATION"
+                                                    }
+                                                }
+                                            ],
+                                            "actual_delivered_date": "2024-08-13T14:20:00-04:00"
+                                        }
+                                    },
+                                    "DOCreated": 0,
+                                    "Delivered": 1,
+                                    "InTransit": 0,
+                                    "Installed": 0,
+                                    "SODropped": 0,
+                                    "Backordered": 0,
+                                    "DOCancelled": 0,
+                                    "POSubmitted": 0,
+                                    "SOAbandoned": 0,
+                                    "SOSubmitted": 0,
+                                    "sales_order": {
+                                        "submitted": {
+                                            "so_id": "1200918925",
+                                            "event_time": "2024-08-13T09:36:11.547Z",
+                                            "fulfiller_id": "gerp",
+                                            "fulfillment_po_id": "SAQ10659278_01"
+                                        }
+                                    },
+                                    "shipment_info": {
+                                        "status": "Delivered",
+                                        "shipment_details": {
+                                            "b97f1bbf-8811-408f-be8c-d4568ed2a7aa": {
+                                                "status": "Delivered",
+                                                "tracking_ids": [
+                                                    "408789310440"
+                                                ],
+                                                "shipment_quantity": 1
+                                            }
+                                        },
+                                        "total_shipped_quantity": 1
+                                    },
+                                    "LabelGenerated": 0,
+                                    "OutForDelivery": 0,
+                                    "ReadyForPickUp": 0,
+                                    "delivery_order": {
+                                        "do_id": "7232460681",
+                                        "event_time": "2024-08-13T12:07:26.510Z"
+                                    },
+                                    "RefundInitiated": 0,
+                                    "ReturnInTransit": 0,
+                                    "SOCallbackError": 0,
+                                    "PartiallyShipped": 0,
+                                    "ReplacementAtHub": 0,
+                                    "ShipToBrandStore": 0,
+                                    "shipment_notices": [
+                                        {}
+                                    ],
+                                    "PartiallyPickedUp": 0,
+                                    "ReminderForPickUp": 0,
+                                    "PartiallyDOCreated": 0,
+                                    "PartiallyDelivered": 0,
+                                    "PartiallyInTransit": 0,
+                                    "ReplacementRefused": 0,
+                                    "ReplacementShipped": 0,
+                                    "expected_ship_date": "2024-08-13T16:00:00.000Z",
+                                    "PreShipResponseSent": 0,
+                                    "ReplacementDOCreated": 0,
+                                    "ReplacementDelivered": 0,
+                                    "ReplacementInTransit": 0,
+                                    "ReplacementInitiated": 0,
+                                    "ReplacementInstalled": 0,
+                                    "ReplacementRequested": 0,
+                                    "fulfiller_attributes": {
+                                        "do_id": "7232460681",
+                                        "so_id": "1200918925",
+                                        "sales_org": "3105",
+                                        "do_line_id": "000010",
+                                        "plant_code": "S341",
+                                        "so_line_id": "000010",
+                                        "bill_to_code": "0005949496",
+                                        "ship_to_code": "0002454015",
+                                        "sold_to_code": "0005949496",
+                                        "fulfiller_sku": "SM-R400NZAAXAR",
+                                        "model_division": "G1",
+                                        "common_division": "00",
+                                        "storage_location": "WC1E",
+                                        "profit_center_code": "DR"
+                                    },
+                                    "PreShipAdviceReceived": 0,
+                                    "physical_fulfiller_id": "geodis",
+                                    "promise_delivery_date": {
+                                        "reason": null,
+                                        "update_count": 1,
+                                        "last_update_time": "2024-08-13T12:15:09.768Z",
+                                        "notification_count": 0,
+                                        "latest_promise_date": "2024-08-16T16:00:00.000Z",
+                                        "custom_stock_message": "Ships by today",
+                                        "original_promise_date": "2024-08-16T16:00:00.000Z",
+                                        "original_stock_status": null,
+                                        "targetted_promise_date": "2024-08-16T16:00:00.000Z",
+                                        "edd_custom_stock_message": "Get it Aug. 16"
+                                    },
+                                    "ReplacementDOCancelled": 0,
+                                    "ReplacementSOSubmitted": 0,
+                                    "ReadyToPickupInBrandStore": 0,
+                                    "ReplacementOutForDelivery": 0,
+                                    "PartiallyReplacementDOCreated": 0
+                                },
+                                "cancellation": {
+                                    "Cancelled": 0,
+                                    "Cancellable": 0,
+                                    "CancelRejected": 0,
+                                    "CancelInitiated": 0,
+                                    "CancelManualOnly": 0,
+                                    "allowed_cancellation_actions": [
+                                        "Default",
+                                        "Super"
+                                    ]
+                                },
+                                "line_item_id": "85334e9c-b7f7-44b2-852b-9a410679a050",
+                                "pricing_order": 1,
+                                "line_item_cost": {
+                                    "total": 127.2,
+                                    "shipping": 0,
+                                    "subtotal": 120,
+                                    "sale_price": 120,
+                                    "unit_price": 120,
+                                    "display_price": 120,
+                                    "regular_price": 200,
+                                    "quantity_groups": [
+                                        {
+                                            "tax": 7.2,
+                                            "discount": {
+                                                "split": [
+                                                    {
+                                                        "id": "IR",
+                                                        "total": 80,
+                                                        "value": 80,
+                                                        "discount_mode": "IR",
+                                                        "discount_category": "D101",
+                                                        "delayed_gratification_value": 0
+                                                    }
+                                                ],
+                                                "amount": 0
+                                            },
+                                            "shipping": 0,
+                                            "subtotal": 120,
+                                            "associated_quantities": []
+                                        }
+                                    ],
+                                    "sale_price_info": {
+                                        "store": {
+                                            "unfinanced": 120
+                                        },
+                                        "public": {
+                                            "unfinanced": 120
+                                        }
+                                    },
+                                    "unit_list_price": 200,
+                                    "additional_taxes": []
+                                },
+                                "returns_window": {
+                                    "returns_window_start": "2024-08-13T18:20:00.000Z",
+                                    "delivery_order": {
+                                        "7232460681": {
+                                            "returns_window_start": "2024-08-13T18:20:00.000Z",
+                                            "quantity": 1
+                                        }
+                                    }
+                                },
+                                "skip_inventory": false,
+                                "original_sku_id": "SM-R400NZAAXAR",
+                                "inventory_status": {
+                                    "status": "InStock",
+                                    "order_by": "2024-08-13T12:59:59.264Z",
+                                    "ship_date": "2024-08-13T18:00:00-04:00",
+                                    "order_by_local": "2024-08-13T08:59:59-04:00",
+                                    "delivery_options": {
+                                        "DM_IM_CE_STANDARD": {
+                                            "order_by": "2024-08-13T12:59:59.264Z",
+                                            "order_by_local": "2024-08-13T08:59:59-04:00",
+                                            "delivery_method": "DM_IM_CE_STANDARD",
+                                            "expected_delivery": "2024-08-16T22:00:00.000Z",
+                                            "expected_delivery_local": "2024-08-16T18:00:00-04:00",
+                                            "edd_custom_stock_message": "Get it by Aug. 16"
+                                        },
+                                        "DM_IM_CE_EXPEDITED": {
+                                            "order_by": "2024-08-13T09:59:59.276Z",
+                                            "order_by_local": "2024-08-13T05:59:59-04:00",
+                                            "delivery_method": "DM_IM_CE_EXPEDITED",
+                                            "expected_delivery": "2024-08-15T22:00:00.000Z",
+                                            "expected_delivery_local": "2024-08-15T18:00:00-04:00",
+                                            "edd_custom_stock_message": "Get it by Aug. 15"
+                                        }
+                                    },
+                                    "expected_delivery": "2024-08-16T12:00:00-04:00",
+                                    "custom_stock_message": "Ships by today",
+                                    "expected_delivery_local": "2024-08-16T18:00:00-04:00",
+                                    "edd_custom_stock_message": "Get it Aug. 16"
+                                },
+                                "line_item_status": "Delivered",
+                                "extended_attributes": {
+                                    "delivery_block_applicable": false
+                                },
+                                "delivery_order_total": 0,
+                                "payment_attributes_v2": {
+                                    "auth_attributes": {
+                                        "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                            "amount": 127.2,
+                                            "status": "Authorised",
+                                            "Pending": {
+                                                "event_time": "2024-08-13T08:01:40.098Z"
+                                            },
+                                            "quantity": [
+                                                1
+                                            ],
+                                            "Authorised": {
+                                                "event_time": "2024-08-13T08:04:33.224Z"
+                                            },
+                                            "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db"
+                                        }
+                                    },
+                                    "capture_attributes": {
+                                        "capture_status": "Captured",
+                                        "capture_requests": {
+                                            "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                                "56c023a6f24326057ce280219ee0004c": {
+                                                    "amount": 127.2,
+                                                    "status": "Captured",
+                                                    "trigger": "OrderLevel",
+                                                    "Captured": {
+                                                        "event_time": "2024-08-13T09:20:36.638Z"
+                                                    },
+                                                    "quantity": [
+                                                        1
+                                                    ],
+                                                    "Initiated": {
+                                                        "event_time": "2024-08-13T09:18:23.905Z"
+                                                    },
+                                                    "Processing": {
+                                                        "event_time": "2024-08-13T09:18:21.484Z"
+                                                    },
+                                                    "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db",
+                                                    "capture_request_id": "56c023a6f24326057ce280219ee0004c",
+                                                    "capture_reference_id": "124b98d6-fc4c-4afe-a217-729178ad925e"
+                                                }
+                                            }
+                                        },
+                                        "is_capture_complete": true,
+                                        "capture_completion_time": "2024-08-13T09:20:36.639Z"
+                                    }
+                                },
+                                "restocking_fee_window": {
+                                    "start_time": "2024-08-13T18:20:00.000Z"
+                                },
+                                "replacements": {
+                                    "start_time": "2024-08-13T18:20:00.000Z"
+                                },
+                                "is_sdd_line_item": false,
+                                "is_ndd_line_item": false,
+                                "promise_delivery_date": {
+                                    "reason": null,
+                                    "update_count": 1,
+                                    "last_update_time": "2024-08-13T12:15:09.768Z",
+                                    "notification_count": 0,
+                                    "latest_promise_date": "2024-08-16T16:00:00.000Z",
+                                    "custom_stock_message": "Ships by today",
+                                    "original_promise_date": "2024-08-16T16:00:00.000Z",
+                                    "original_stock_status": null,
+                                    "targetted_promise_date": "2024-08-16T16:00:00.000Z",
+                                    "edd_custom_stock_message": "Get it Aug. 16"
+                                },
+                                "shipping_method_name": "Standard",
+                                "activation_url": "https://www.qashop.samsung.com\n            /us/checkout/carrier/#/activate/d8fed054-5566-4e35-8aaa-018f46127022?item=85334e9c-b7f7-44b2-852b-9a410679a050",
+                                "tracking_info": [
+                                    {
+                                        "status": "Delivered",
+                                        "weight": {
+                                            "unit": "lb",
+                                            "value": 0.4
+                                        },
+                                        "carrier": "fedex",
+                                        "quantity": 1,
+                                        "ship_date": "2024-08-13T17:00:00.000Z",
+                                        "is_refusal": false,
+                                        "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                        "tracking_id": "408789310440",
+                                        "tracking_url": "https://www.fedex.com/apps/fedextrack/?action=track&tracknumbers=408789310440",
+                                        "ship_quantity": 0,
+                                        "last_update_time": "2024-08-13T22:22:12.746901132Z",
+                                        "delivered_quantity": 0,
+                                        "isDeliveryException": false,
+                                        "carrier_service_name": "",
+                                        "fulfillment_carrier_id": "fedex",
+                                        "carrier_shipment_method": "PRIORITY_OVERNIGHT",
+                                        "estimated_delivery_date": "",
+                                        "fulfillment_notification_time": "2024-08-13T12:17:49.172Z",
+                                        "history": [
+                                            {
+                                                "timestamp": "2024-08-13T05:23:00-04:00",
+                                                "carrier_code": "AR",
+                                                "description": "At local FedEx facility",
+                                                "location": {
+                                                    "street": "",
+                                                    "city": "GREENSBORO",
+                                                    "state_code": "NC",
+                                                    "country": "United States",
+                                                    "country_code": "US",
+                                                    "location_type": "DESTINATION_FEDEX_FACILITY"
+                                                }
+                                            },
+                                            {
+                                                "timestamp": "2024-08-13T02:19:00-04:00",
+                                                "carrier_code": "AR",
+                                                "description": "At destination sort facility",
+                                                "location": {
+                                                    "street": "",
+                                                    "city": "GREENSBORO",
+                                                    "state_code": "NC",
+                                                    "country": "United States",
+                                                    "country_code": "US",
+                                                    "location_type": "SORT_FACILITY"
+                                                }
+                                            },
+                                            {
+                                                "timestamp": "2024-08-12T21:55:00-05:00",
+                                                "carrier_code": "DP",
+                                                "description": "Left FedEx origin facility",
+                                                "location": {
+                                                    "street": "",
+                                                    "city": "IRVING",
+                                                    "state_code": "TX",
+                                                    "country": "United States",
+                                                    "country_code": "US",
+                                                    "location_type": "ORIGIN_FEDEX_FACILITY"
+                                                }
+                                            },
+                                            {
+                                                "timestamp": "2024-08-12T13:29:00-05:00",
+                                                "carrier_code": "PU",
+                                                "description": "Picked up",
+                                                "location": {
+                                                    "street": "",
+                                                    "city": "IRVING",
+                                                    "state_code": "TX",
+                                                    "country": "United States",
+                                                    "country_code": "US",
+                                                    "location_type": "PICKUP_LOCATION"
+                                                }
+                                            },
+                                            {
+                                                "timestamp": "2024-08-12T08:07:34-05:00",
+                                                "carrier_code": "OC",
+                                                "description": "Shipment information sent to FedEx",
+                                                "location": {
+                                                    "street": "",
+                                                    "city": "",
+                                                    "state_code": "",
+                                                    "country": "",
+                                                    "country_code": "",
+                                                    "location_type": "CUSTOMER"
+                                                }
+                                            },
+                                            {
+                                                "timestamp": "2024-08-13T08:24:00-04:00",
+                                                "carrier_code": "OD",
+                                                "description": "On FedEx vehicle for delivery",
+                                                "location": {
+                                                    "street": "",
+                                                    "city": "GREENSBORO",
+                                                    "state_code": "NC",
+                                                    "country": "United States",
+                                                    "country_code": "US",
+                                                    "location_type": "VEHICLE"
+                                                }
+                                            },
+                                            {
+                                                "timestamp": "2024-08-13T14:20:00-04:00",
+                                                "carrier_code": "DL",
+                                                "description": "Delivered",
+                                                "location": {
+                                                    "street": "",
+                                                    "city": "GOLDSTON",
+                                                    "state_code": "NC",
+                                                    "country": "United States",
+                                                    "country_code": "US",
+                                                    "location_type": "DELIVERY_LOCATION"
+                                                }
+                                            }
+                                        ],
+                                        "actual_delivered_date": "2024-08-13T14:20:00-04:00"
+                                    }
+                                ],
+                                "is_sms_opt_in_eligible": false
+                            }
+                        ],
+                        "delivery_service_items": [],
+                        "delivery_line_item": {
+                            "tags": [
+                                "PAYMENT_PP"
+                            ],
+                            "sku_id": "DM_IM_CE_STANDARD",
+                            "quantity": 1,
+                            "ui_order": 2,
+                            "attributes": {
+                                "tags": [
+                                    "lineItemGroups"
+                                ],
+                                "carrier": null,
+                                "channel": [],
+                                "cis_sku": null,
+                                "options": null,
+                                "requires": null,
+                                "supports": null,
+                                "use_case": null,
+                                "ecom_flag": true,
+                                "image_url": null,
+                                "is_hazmat": false,
+                                "sales_org": null,
+                                "is_grv_sku": false,
+                                "model_name": "Standard",
+                                "payer_code": "2453962",
+                                "ship_alone": true,
+                                "trial_info": {
+                                    "is_applicable": false
+                                },
+                                "b2bEcomFlag": false,
+                                "is_sim_card": false,
+                                "display_name": "Standard",
+                                "is_accessory": false,
+                                "product_type": "Delivery",
+                                "vat_reversal": false,
+                                "thumbnail_url": null,
+                                "is_cancellable": true,
+                                "is_ha_delivery": false,
+                                "product_family": null,
+                                "renewal_sku_id": null,
+                                "associated_skus": [],
+                                "is_customizable": false,
+                                "is_esim_enabled": false,
+                                "is_flagship_sku": false,
+                                "is_subscription": false,
+                                "plan_tier_value": 0,
+                                "ship_along_with": [],
+                                "shipping_weight": 1,
+                                "b2b_ecom_enabled": false,
+                                "b2c_ecom_enabled": false,
+                                "localized_fields": [],
+                                "long_description": null,
+                                "product_division": null,
+                                "daas_service_skus": [],
+                                "short_description": "Once shipped, arrives in 1-5 business days",
+                                "delivery_indicator": null,
+                                "delivery_mode_type": "home_delivery",
+                                "is_buynow_eligible": false,
+                                "allow_bundle_cancel": true,
+                                "black_listed_states": [],
+                                "is_upgrade_eligible": true,
+                                "model_division_code": null,
+                                "product_type_custom": null,
+                                "delivery_instruction": null,
+                                "diagonal_screen_size": 0,
+                                "external_merchant_id": null,
+                                "is_insurance_product": false,
+                                "is_trade_in_eligible": false,
+                                "delivery_service_type": null,
+                                "max_purchasable_limit": 9,
+                                "partner_support_number": null,
+                                "samsung_care_product_id": null,
+                                "sim_type_for_activation": "Not Applicable",
+                                "terms_and_conditions_id": null,
+                                "carrier_delivery_mode_id": null,
+                                "delayed_shipping_message": null,
+                                "is_energy_star_certified": false,
+                                "partner_admin_portal_url": null,
+                                "product_details_page_url": null,
+                                "ship_along_with_quantity": 1,
+                                "partner_attributes_config": null,
+                                "applicable_payment_options": [
+                                    {
+                                        "name": "affirm",
+                                        "value": "affirm"
+                                    },
+                                    {
+                                        "name": "adyen_cards",
+                                        "value": "adyen_cards"
+                                    },
+                                    {
+                                        "name": "Samsung Pay",
+                                        "value": "spay"
+                                    },
+                                    {
+                                        "name": "PayPal Checkout",
+                                        "value": "PP"
+                                    }
+                                ],
+                                "is_buy_from_store_eligible": false,
+                                "partner_contract_margin_unit": "Percentage",
+                                "short_redemption_instruction": null,
+                                "partner_contract_margin_value": 0,
+                                "shipping_method_fulfiller_code": "standard"
+                            },
+                            "flash_sale": false,
+                            "fulfillment": {
+                                "AtHub": 0,
+                                "Refused": 0,
+                                "Shipped": 0,
+                                "PickedUp": 0,
+                                "Preorder": 0,
+                                "shipment": {
+                                    "9a050942-83b1-42fa-ab9d-b474cc2df6f0": {
+                                        "status": "Delivered",
+                                        "weight": {
+                                            "unit": "lb",
+                                            "value": 0.4
+                                        },
+                                        "quantity": 1,
+                                        "ship_date": "2024-08-13T17:00:00.000Z",
+                                        "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                        "tracking_id": "9a050942-83b1-42fa-ab9d-b474cc2df6f0",
+                                        "ship_quantity": 0,
+                                        "last_update_time": "2024-08-13T12:15:09.768Z",
+                                        "delivered_quantity": 0,
+                                        "fulfillment_notification_time": "2024-08-13T12:17:49.182Z"
+                                    }
+                                },
+                                "DOCreated": 0,
+                                "Delivered": 1,
+                                "InTransit": 0,
+                                "Installed": 0,
+                                "SODropped": 0,
+                                "Backordered": 0,
+                                "DOCancelled": 0,
+                                "POSubmitted": 0,
+                                "SOAbandoned": 0,
+                                "SOSubmitted": 0,
+                                "sales_order": {
+                                    "submitted": {
+                                        "so_id": "1200918925",
+                                        "event_time": "2024-08-13T09:36:11.547Z",
+                                        "fulfiller_id": "gerp",
+                                        "fulfillment_po_id": "SAQ10659278_01"
+                                    }
+                                },
+                                "shipment_info": {
+                                    "status": "Delivered",
+                                    "shipment_details": {
+                                        "b97f1bbf-8811-408f-be8c-d4568ed2a7aa": {
+                                            "status": "Delivered",
+                                            "tracking_ids": [
+                                                "9a050942-83b1-42fa-ab9d-b474cc2df6f0"
+                                            ],
+                                            "shipment_quantity": 1
+                                        }
+                                    },
+                                    "total_shipped_quantity": 1
+                                },
+                                "LabelGenerated": 0,
+                                "OutForDelivery": 0,
+                                "ReadyForPickUp": 0,
+                                "delivery_order": {
+                                    "do_id": "7232460681",
+                                    "event_time": "2024-08-13T12:07:26.510Z"
+                                },
+                                "RefundInitiated": 0,
+                                "ReturnInTransit": 0,
+                                "SOCallbackError": 0,
+                                "PartiallyShipped": 0,
+                                "ReplacementAtHub": 0,
+                                "ShipToBrandStore": 0,
+                                "PartiallyPickedUp": 0,
+                                "ReminderForPickUp": 0,
+                                "PartiallyDOCreated": 0,
+                                "PartiallyDelivered": 0,
+                                "PartiallyInTransit": 0,
+                                "ReplacementRefused": 0,
+                                "ReplacementShipped": 0,
+                                "PreShipResponseSent": 0,
+                                "ReplacementDOCreated": 0,
+                                "ReplacementDelivered": 0,
+                                "ReplacementInTransit": 0,
+                                "ReplacementInitiated": 0,
+                                "ReplacementInstalled": 0,
+                                "ReplacementRequested": 0,
+                                "fulfiller_attributes": {
+                                    "plant_code": "S341",
+                                    "model_division": "G1",
+                                    "common_division": "00",
+                                    "storage_location": "WC1E",
+                                    "profit_center_code": "DR"
+                                },
+                                "PreShipAdviceReceived": 0,
+                                "physical_fulfiller_id": "geodis",
+                                "promise_delivery_date": {
+                                    "update_count": 0,
+                                    "last_update_time": "2024-08-13T08:01:35.869Z",
+                                    "notification_count": 0,
+                                    "latest_promise_date": null,
+                                    "original_promise_date": null,
+                                    "targetted_promise_date": null,
+                                    "edd_custom_stock_message": null
+                                },
+                                "ReplacementDOCancelled": 0,
+                                "ReplacementSOSubmitted": 0,
+                                "ReadyToPickupInBrandStore": 0,
+                                "ReplacementOutForDelivery": 0,
+                                "PartiallyReplacementDOCreated": 0
+                            },
+                            "cancellation": {
+                                "Cancelled": 0,
+                                "Cancellable": 0,
+                                "CancelRejected": 0,
+                                "CancelInitiated": 0,
+                                "CancelManualOnly": 0,
+                                "allowed_cancellation_actions": [
+                                    "Default",
+                                    "Super"
+                                ]
+                            },
+                            "line_item_id": "c3153b85-9631-4efc-81a5-40b453eef0c8",
+                            "pricing_order": 2,
+                            "line_item_cost": {
+                                "total": 0,
+                                "shipping": 0,
+                                "subtotal": 0,
+                                "sale_price": 0,
+                                "unit_price": 0,
+                                "display_price": 0,
+                                "regular_price": 0,
+                                "quantity_groups": [
+                                    {
+                                        "tax": 0,
+                                        "discount": {
+                                            "split": [],
+                                            "amount": 0
+                                        },
+                                        "shipping": 0,
+                                        "subtotal": 0,
+                                        "associated_quantities": []
+                                    }
+                                ],
+                                "sale_price_info": {
+                                    "store": {
+                                        "unfinanced": 0
+                                    },
+                                    "public": {
+                                        "unfinanced": 0
+                                    }
+                                },
+                                "unit_list_price": 0,
+                                "additional_taxes": []
+                            },
+                            "returns_window": {
+                                "returns_window_start": "2024-08-13T17:02:00.000Z"
+                            },
+                            "skip_inventory": false,
+                            "original_sku_id": "DM_IM_CE_STANDARD",
+                            "inventory_status": {
+                                "status": "InStock"
+                            },
+                            "line_item_status": "Delivered",
+                            "extended_attributes": {
+                                "delivery_block_applicable": false
+                            },
+                            "delivery_order_total": 0,
+                            "payment_attributes_v2": {
+                                "auth_attributes": {
+                                    "0c48dc89-4a84-42a6-bcc0-d956a93ca4db": {
+                                        "amount": 0,
+                                        "status": "Authorised",
+                                        "Pending": {
+                                            "event_time": "2024-08-13T08:01:40.098Z"
+                                        },
+                                        "quantity": [
+                                            1
+                                        ],
+                                        "Authorised": {
+                                            "event_time": "2024-08-13T08:04:33.224Z"
+                                        },
+                                        "transaction_id": "0c48dc89-4a84-42a6-bcc0-d956a93ca4db"
+                                    }
+                                }
+                            },
+                            "restocking_fee_window": {
+                                "start_time": "2024-08-13T17:00:00.000Z"
+                            },
+                            "is_sdd_line_item": false,
+                            "is_ndd_line_item": false,
+                            "promise_delivery_date": {
+                                "update_count": 0,
+                                "last_update_time": "2024-08-13T08:01:35.869Z",
+                                "notification_count": 0,
+                                "latest_promise_date": null,
+                                "original_promise_date": null,
+                                "targetted_promise_date": null,
+                                "edd_custom_stock_message": null
+                            },
+                            "activation_url": "https://www.qashop.samsung.com\n            /us/checkout/carrier/#/activate/d8fed054-5566-4e35-8aaa-018f46127022?item=c3153b85-9631-4efc-81a5-40b453eef0c8",
+                            "tracking_info": [
+                                {
+                                    "status": "Delivered",
+                                    "weight": {
+                                        "unit": "lb",
+                                        "value": 0.4
+                                    },
+                                    "quantity": 1,
+                                    "ship_date": "2024-08-13T17:00:00.000Z",
+                                    "shipment_id": "b97f1bbf-8811-408f-be8c-d4568ed2a7aa",
+                                    "tracking_id": "9a050942-83b1-42fa-ab9d-b474cc2df6f0",
+                                    "ship_quantity": 0,
+                                    "last_update_time": "2024-08-13T12:15:09.768Z",
+                                    "delivered_quantity": 0,
+                                    "fulfillment_notification_time": "2024-08-13T12:17:49.182Z"
+                                }
+                            ]
+                        },
+                        "display_name": "Standard",
+                        "delivery_cost": 0
+                    }
+                ],
+                "bill_credit": {
+                    "delayed_gratification_value": 0,
+                    "delayed_gratification_monthly_value": 0
+                },
+                "fulfillment_carrier_id": "fedex",
+                "display_delivery_dates": {
+                    "85334e9c-b7f7-44b2-852b-9a410679a050": {
+                        "start_date": "2024-08-16T12:00:00-04:00",
+                        "end_date": "2024-08-16T12:00:00-04:00",
+                        "custom_message": null,
+                        "is_custom_message": false,
+                        "is_window": false
+                    }
+                },
+                "to_be_shipped_items": [],
+                "tracking_url": "https://www.fedex.com/apps/fedextrack/?action=track&tracknumbers=408789310440",
+                "first_reminder_delay": "30d",
+                "second_reminder_delay": "60d"
+            },
+            "order_id": "SAQ10659278",
+            "auto_cancellation_date": "2024-10-16T08:01:35.898Z",
+            "keep_order": "https://www.qashop.samsung.com/us/web/ftc-verify/SAQ10659278?emailId=testmm1@gmail.com&zipCodeShipping=48152",
+            "notification_rule_prefix": "ESTORE"
+        }
+    },
+    "event_type": "OrderDelivered"
+}'

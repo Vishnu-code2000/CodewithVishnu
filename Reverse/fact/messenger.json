@@ -1,0 +1,13 @@
+{
+    "email": "vineeth650@prc.cx",
+    "notification": {
+        "in-stock": {
+            "is_active": true,
+            "skus": {
+                "SM-Q509NZSAXAR": {}
+            }
+        }
+    },
+    "source": "my-orders",
+    "mobile": "908 099 3497"
+}

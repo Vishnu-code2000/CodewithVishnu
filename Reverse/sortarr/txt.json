@@ -1,0 +1,51 @@
+{
+    "retry": {
+        "policy": "custom_interval",
+        "options": {
+            "pattern": [
+                {
+                    "delay": 7200,
+                    "range": "1.."
+                }
+            ]
+        }
+    },
+    "status": "Completed",
+    "message": {
+        "args": {
+            "order_id": "dce069ac-e3f2-4457-bf95-7fe3ca7b25ae",
+            "return_id": "aa777026-df90-4ca1-9bf6-2716d2639ef4"
+        },
+        "event_id": "GetReturnAddressSuccess",
+        "action_id": "GenerateReturnLabel",
+        "node_info": {
+            "nodeIds": [
+                "e9ba6f8b-77d1-4629-9cdb-32b35d870db9"
+            ],
+            "rootIds": [
+                "bf6355fa-8543-4e89-b61f-d57d67f62806"
+            ],
+            "myNodeId": "836a9d81-789e-4ff8-9bf2-63224ebc1c47"
+        },
+        "state_machine_id": "ReturnInitiation",
+        "order_workflow_version": "v2.0.0"
+    },
+    "exchange": "GenerateLabel",
+    "metadata": {
+        "estimated_processing_time": "2024-10-15T06:04:20.130Z"
+    },
+    "retry_count": 0,
+    "requeue_count": 0,
+    "schema_version": "5.0.0",
+    "message_options": {
+        "queueOptions": {
+            "priority": 0,
+            "persistent": true
+        }
+    },
+    "consumer_request_id": "4966338e-bf53-4c7f-91e6-495d1d036173",
+    "producer_request_id": "463fdbe5d5d9b0ecddb832eb040ef119",
+    "is_external_recipient": false,
+    "requeue_delay_in_secs": 7200,
+    "delay_queueuing_in_secs": 0
+}
